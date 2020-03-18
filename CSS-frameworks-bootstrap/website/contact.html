@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>January Island Escapes | Contact </title>
+</head>
+<body>
+    <header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <!-- Hamburger Icon -->
+                    <button type="button" class="navbar__hamburger navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Brand -->
+                    <a class="navbar__brand navbar-brand" href="index.html">
+                        <span>January Island Escapes</span>
+                    </a>
+                </div>
+        
+                <!-- Navigation Links -->
+                <div class="navbar__menu collapse navbar-collapse" id="navbar-collapse">
+                    <div class="menu">
+                        <span><a class="menu__item" href="index.html">Home</a> <span class="hidden-xs">|</span></span>
+                        <span><a class="menu__item" href="packages.html">Packages</a> <span class="hidden-xs">|</span></span>
+                        <span><a class="menu__item menu__item--active" href="contact.html">Contact Us<span class="sr-only">(current)</span></a></span>
+                    </div>
+                </div>
+            </div>   
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum recusandae nam, 
+                    reprehenderit doloribus consequuntur, dolor eius accusantium odio, enim 
+                    laudantium.</p>
+                <form class="form">                  
+                    <div class="form-group">
+                        <div class="form__input form__inputFname col-sm-6 form-group">
+                            <label for="inputFirstName">First name</label>
+                            <input class="form-control" type="text" id="inputFirstName" required>
+                        </div>
+                        <div class="form__input form__inputLname col-sm-6 form-group">
+                            <label for="inputLastName">Last name</label>
+                            <input class="form-control" type="text" id="inputLastName">
+                        </div>
+                    </div>
+                    <div class="form__input form-group">
+                        <label for="inputTelephoneNumber">Telephone number</label>
+                        <input class="form-control" type="tel" id="inputTelephoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2,4}" required>
+                        <small>Format: 123-456-7890</small>
+                    </div>
+                    <div class="form__input form-group">
+                        <label for="inputEmail">Email address</label>
+                        <input class="form-control" type="email" id="inputEmail" required>
+                    </div>
+                    <div class="form__submit">
+                        <button class="btn" type="submit">Submit</button>
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="text-center copyright">
+            <p>Copyright &copy; 2019</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

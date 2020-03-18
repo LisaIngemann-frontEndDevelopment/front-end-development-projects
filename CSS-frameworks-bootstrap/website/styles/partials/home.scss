@@ -1,0 +1,32 @@
+/* Home Page */
+.carouselContainer {
+    display: block;
+    max-width: 1500px;
+    margin: -20px auto 0 auto;
+}
+.carousel-indicators .active,
+.carousel-indicators__item--active  {
+    height: 3px;
+    width: 25px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    background-color: $white; 
+}
+
+.carousel-indicators li,
+.carousel-indicators__item {
+    height: 3px;
+    width: 25px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    background-color: transparentize($white, .5);
+}
+
+.btn {
+    color: $white;
+    background-color: $orange;
+    font-weight: bold;
+    border-radius: 0;
+}

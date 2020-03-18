@@ -1,0 +1,19 @@
+/* Contact Page */
+.form {
+    margin-bottom: 200px;
+
+    &__inputFname {
+        padding-left: 0;
+    
+        @media screen and (max-width: 767px) {
+            padding-right: 0; 
+        }
+    }
+    &__inputLname {
+        padding-right: 0;
+    
+        @media screen and (max-width: 767px) {
+            padding-left: 0; 
+        }
+    }
+}

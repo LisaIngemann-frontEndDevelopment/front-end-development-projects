@@ -1,0 +1,61 @@
+/* Header */
+.navbar {
+    border-radius: 0;
+    background-color: $blue;
+    border: none;
+          
+    & .navbar__brand {
+        color: $white;
+        @include font-size(48);
+        font-weight: bold;
+    
+        @media screen and (max-width: 415px) {
+            @include font-size(32);
+        }
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+    }
+    & .navbar__hamburger .icon-bar {
+        background-color: $white;
+    }
+    & .navbar__hamburger:hover,
+    & .navbar__hamburger:focus {
+        background-color: $lightBlue; 
+    }      
+}
+
+.menu {
+    color: $lightBlue;
+    float: right;
+    margin-top: 15px;
+    margin-right: -15px;
+
+    &__item {
+        color: $lightBlue;
+        &--active {
+            color: $white;
+            font-weight: bold;
+        }
+        &:focus,
+        &:active,
+        &:hover {
+            color: $white;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-top: 0;
+        margin-right: 0;
+        padding: 10px 0;
+        float: none;
+        display: block;
+
+        &__item {
+            display: block;
+            padding: 10px 0;
+            width: 100%;
+        }
+    }
+}

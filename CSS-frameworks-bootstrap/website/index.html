@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>January Island Escapes</title>
+</head>
+<body>
+    <header>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <!-- Hamburger Icon -->
+                    <button type="button" class="navbar__hamburger navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Brand -->
+                    <a class="navbar__brand navbar-brand" href="index.html">
+                        <span>January Island Escapes</span>
+                    </a>
+                </div>
+        
+                <!-- Navigation Links -->
+                <div class="navbar__menu collapse navbar-collapse" id="navbar-collapse">
+                    <div class="menu">
+                        <span><a class="menu__item menu__item--active" href="index.html">Home<span class="sr-only">(current)</span></a> <span class="hidden-xs">|</span></span>
+                        <span><a class="menu__item" href="packages.html">Packages</a> <span class="hidden-xs">|</span></span>
+                        <span><a class="menu__item" href="contact.html">Contact Us</a></span>
+                    </div>
+                </div>
+            </div>   
+        </nav>
+
+        <!-- Image Slider --> 
+        <div class="carouselContainer">
+            <div class="carousel slide" data-ride="carousel" id="headerSlider">
+    
+                <!-- Slider Indicators -->
+                <ol class="carousel-indicators">
+                    <li class="carousel-indicators__item carousel-indicators__item--active active" data-target="#headerSlider" data-slide-to="0"></li>
+                    <li class="carousel-indicators__item" data-target="#headerSlider" data-slide-to="1"></li>
+                    <li class="carousel-indicators__item" data-target="#headerSlider" data-slide-to="2"></li>
+                </ol>
+                
+                <!-- Slider Images -->
+                <div class="carousel-inner">
+                    <div class="carousel__item carousel__item--active item active">
+                        <img src="images/banner1.jpg" alt="Picture of a boat and palm tree on the beach with a setting sun.">
+                    </div>
+                    <div class="carousel__item item">
+                        <img src="images/banner2.jpg" alt="Picture of a bridge leading to an island with trees and some huts.">
+                    </div>
+                    <div class="carousel__item item">
+                        <img src="images/banner3.jpg" alt="Picture of a beach with many palm trees and a van with shade.">
+                    </div>
+                </div>
+    
+                <!-- Slider Controls -->
+                <a class="carousel__control left carousel-control" href="#headerSlider" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel__control right carousel-control" href="#headerSlider" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Welcome to January Island Escapes</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe assumenda 
+                        quasi aperiam. Corrupti corporis adipisci, quisquam aliquid!</p>
+                </div>
+
+                <!-- Packages -->
+                <div class="packagePreview">
+                    <div class="packagePreview__item col-md-3 col-sm-6">
+                        <h2>Package 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Amet placeat ea eaque quo nihil sed exercitationem voluptas 
+                            assumenda natus fugit a.</p>
+                        <button class="btn">Find out more</button>
+                    </div>
+                    <div class="packagePreview__item col-md-3 col-sm-6">
+                        <h2>Package 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Amet placeat ea eaque quo nihil sed exercitationem voluptas 
+                            assumenda natus fugit a.</p>
+                        <button class="btn">Find out more</button>
+                    </div>
+                    <div class="packagePreview__item col-md-3 col-sm-6">
+                        <h2>Package 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Amet placeat ea eaque quo nihil sed exercitationem voluptas 
+                            assumenda natus fugit a!</p>
+                        <button class="btn">Find out more</button>
+                    </div>
+                    <div class="packagePreview__item col-md-3 col-sm-6">
+                        <h2>Package 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Amet placeat ea eaque quo nihil sed exercitationem voluptas 
+                            assumenda natus fugit a!</p>
+                        <button class="btn">Find out more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="text-center copyright">
+            <p>Copyright &copy; 2019</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

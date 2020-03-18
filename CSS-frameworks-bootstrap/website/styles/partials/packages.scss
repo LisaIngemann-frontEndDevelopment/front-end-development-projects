@@ -1,0 +1,11 @@
+/* Packages Page */
+.packages__item {
+    border: 1px solid $orange;
+    padding: 0 15px 15px 15px;
+    margin: 20px 0;
+
+    &:hover {
+        background-color: $lightOrange;
+        cursor: pointer;
+    }
+}
