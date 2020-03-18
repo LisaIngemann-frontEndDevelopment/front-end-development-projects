@@ -1,5 +1,5 @@
 # Design1
-**Vector graphics and Style Tile assignment**
+## **Vector graphics and Style Tile assignment**
 
 **Goal:** Practice to work with vector based graphics and create an icon set.
 
