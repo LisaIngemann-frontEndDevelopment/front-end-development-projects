@@ -1,0 +1,116 @@
+/* Header */
+header {
+    margin: 0;
+    background-color: $dark-silver;
+    height: 100px;
+}
+.logo {
+    width: 250px;
+    margin: 0 20px;
+    padding-top: 20px;
+    float: left;
+
+    & img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        padding-top: 30px;
+        width: 200px;
+    }
+    @media screen and (max-width: $breakpoint-smallest) {
+        padding-top: 30px;
+        width: 150px;
+    }
+}
+.main-nav {
+    margin-top: 25px;
+    float: right;
+    font-size: 20px;
+
+    &__item {
+        font-family: $bowlby;
+        letter-spacing: 2px;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        margin-right: 20px;
+        position: relative;
+        z-index: 10;
+    
+        &:hover {
+            color: $yellow;
+            text-decoration: underline;
+        }
+        &:active {
+            color: $yellow;
+            text-decoration: underline;
+        }
+    }
+    &__item--active {
+        color: $yellow;
+    }
+    &__active {
+        position: absolute;
+        left: 50%;
+        top: 50px;
+        margin-left: -30px;
+        background-color: $yellow;
+        width: 60px;
+        height: 20px;
+    }
+    &__icon {
+        margin-right: 5px;
+    }
+
+    @media screen and (max-width: $breakpoint-medium) {
+        display: none;
+        width: 60%;
+        text-align: center;
+        position: absolute;
+        right: -19px;
+        top: 75px;
+
+        &__item {
+            display: block;
+            color: $dark-silver;
+            background: #fff;  
+            border: 1px solid $silver;
+            position: relative;
+            
+            &:hover {
+                background: $light-blue;
+            }
+            &--active {
+                color: $yellow;
+                padding-bottom: 40px;
+                background: $light-blue;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        width: 100%; 
+    }
+}
+
+.hamburger-nav {
+    display: none;
+
+    & i {
+        color: #fff;
+        font-size: 50px;
+        float: right;
+        margin: 15px 10px 0 0;
+        padding: 10px;
+
+        &:hover {
+            color: $yellow;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-medium) {
+        display: block;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Checkered Board Games - Play Game of Thrones board game.">
+	<meta name="keywords" content="game of thrones,board game,play board game,roll dice,trap,iron throne">
+    <meta name="author" content="Lisa Ingemann">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <title>Board Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+
+<!-- HEADER -->
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Checkered Board Games logo"></a>
+                </div>   
+        
+<!-- Nav -->
+                <nav class="hamburger-nav">
+                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                </nav>
+                <nav class="main-nav">
+                    <a class="main-nav__item" href="index.html"><i class="main-nav__icon icon-character"></i>Characters</a>
+                    <a class="main-nav__item main-nav__item--active" href="board_game.html"><i class="main-nav__icon icon-board"></i>Board Game<span aria-hidden="true" class="main-nav__active"></span></a>
+                    <a class="main-nav__item" href="finale.html"><i class="main-nav__icon icon-finale"></i>Finale</a>
+                </nav>
+            </header>
+
+<!-- MAIN -->
+            <main>
+
+<!-- Board Game -->
+                <section class="board-game">
+                    <div class="page-container">
+                        <div class="content">
+                            <h1>Game of Thrones Board Game</h1>
+                            <div class="board-game-UI">
+                                <h2>Player <span class="player-turn"></span> roll the dice:</h2>
+                                <div class="board-game-flex">
+                                    <div class="board-game-flex__paragraph">
+                                        <p class="player-roll"></p>
+                                    </div>
+                                    <div class="board-game-flex__dice">
+                                        <div class="dice-container">
+                                            <i id="dice" class="icon-dice"></i>
+                                        </div>
+                                        <div class="message-trap">
+                                            <h3></h3>
+                                            <p class="text-trap"></p>
+                                            <p class="instruction"></p>
+                                            <a class="accept-trap">OK</a>
+                                        </div>
+                                        <div class="goal-message">
+                                            <h3>GOAL</h3>
+                                            <p>You Win!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <canvas class="canvas" width="1000" height="900"></canvas>
+                        <div class="bead-tokens">
+                            <img class="bead1" src="#" alt="player1's bead.">
+                            <img class="bead2" src="#" alt="player2's bead.">
+                        </div>
+                    </div>
+                </section>          
+            </main>
+
+<!-- FOOTER -->
+            <footer>
+                <div class="contact">
+                    <p>Contact us through mail: <a href="mailto:checkeredBoardGames@gmail.com">CheckeredBoardGames@gmail.com</a></p>
+                    <p>on <a href="https://twitter.com">Twitter <i class="fab fa-twitter"></i></a></p>
+                    <p>or on <a href="https://www.facebook.com">Facebook <i class="fab fa-facebook-f"></i></a></p>
+                </div>
+                
+                <div class="copyright">
+                    <p>Copyright &copy;CheckeredBoardGames</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="script/script.js"></script>
+    <script src="script/script_game.js"></script>
+</body>
+</html>

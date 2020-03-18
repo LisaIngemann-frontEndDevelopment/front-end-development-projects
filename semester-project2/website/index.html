@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Checkered Board Games - Select characters for Game of Thrones board game.">
+	<meta name="keywords" content="game of thrones,board game,house,gender,alias,title,stark,targaryen,lannister,snow,greyjoy,baratheon,clegane,tyrell,play board game,board game rules">
+    <meta name="author" content="Lisa Ingemann">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <title>Checkered Board Games</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+
+<!-- HEADER -->
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Checkered Board Games logo"></a>
+                </div>   
+        
+<!-- Nav -->
+                <nav class="hamburger-nav">
+                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                </nav>
+                <nav class="main-nav">
+                    <a class="main-nav__item main-nav__item--active" href="index.html"><i class="main-nav__icon icon-character"></i>Characters<span aria-hidden="true" class="main-nav__active"></span></a>
+                    <a class="main-nav__item" href="board_game.html"><i class="main-nav__icon icon-board"></i>Board Game</a>
+                    <a class="main-nav__item" href="finale.html"><i class="main-nav__icon icon-finale"></i>Finale</a>
+                </nav>
+            </header>
+
+<!-- MAIN -->
+            <main>
+
+<!-- Characters -->
+                <section class="characters-section">
+                    <div class="content">
+                        <div class="intro">
+                            <h1>Play a Game of Thrones board game!</h1>
+                            <p>Choose characters from Game of Thrones to play against a friend to see who can reach the throne first!</p>
+                        </div>
+                        <h2 id="selected-characters">First Choose Two Characters:</h2>
+                        <div class="selected-characters">
+                            <ul class="selected-characters__list">
+
+                            </ul>
+                            <div class="selected-characters__error">
+                                <p>You can only choose two characters.</p>
+                                <p>Please remove the extra ones to play.</p>
+                            </div>
+                            <div class="selected-characters__play-btn">
+                                <a href="board_game.html" class="button-secondary">Play Game</a>
+                            </div>
+                        </div>
+                        <div class="characters">
+                        
+                        </div>
+                    </div>
+                </section>
+
+<!-- Rules -->
+                <section class="rules">
+                    <div class="content">
+                        <h2><i class="icon-rules"></i> Board Game Rules</h2>
+                        <ul>
+                            <li>Choose two characters</li>
+                            <li>Take turns rolling the dice with player 1 starting</li>
+                            <li>First player to get to the iron throne wins</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+
+<!-- FOOTER -->
+            <footer>
+                <div class="contact">
+                    <p>Contact us through mail: <a href="mailto:checkeredBoardGames@gmail.com">CheckeredBoardGames@gmail.com</a></p>
+                    <p>on <a href="https://twitter.com">Twitter <i class="fab fa-twitter"></i></a></p>
+                    <p>or on <a href="https://www.facebook.com">Facebook <i class="fab fa-facebook-f"></i></a></p>
+                </div>
+                
+                <div class="copyright">
+                    <p>Copyright &copy;CheckeredBoardGames</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+    <script src="script/script_index.js"></script>
+</body>
+</html>

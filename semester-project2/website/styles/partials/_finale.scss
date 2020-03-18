@@ -1,0 +1,190 @@
+/* Finale Page */
+.main-nav__active {
+    position: absolute;
+    left: 55%;
+    top: 50px;
+    margin-left: -30px;
+    background-color: $yellow;
+    width: 60px;
+    height: 20px;
+
+    @media screen and (max-width: $breakpoint-medium) {
+        left: 52%;
+    }
+}
+
+.winner-section {
+    background: $light-blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &__congratulations {
+        margin-bottom: 5px;
+    }
+    &__winner {
+        background: $light-blue;
+        padding: 20px 0 80px 0;
+        margin: 10px 0 50px 0;
+        text-align: center;
+        font-size: 20px;
+
+        &__throne {
+            float: left;
+            width: 80%;
+        }
+    }
+    &__iron-throne-img {
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+
+        @media screen and (max-width: $breakpoint-medium) {
+            width: 40%;; 
+        }
+        @media screen and (max-width: $breakpoint-small) {
+            width: 80%;; 
+        }
+        @media screen and (max-width: $breakpoint-smallest) {
+            width: 100%;; 
+        }
+    }
+    &__cheerContainer {
+        margin-top: -100px;
+    }
+    &__cheer {
+        position: relative;
+        color: $yellow;
+        font-size: 20px;
+        background: $white;
+        padding: 5px 10px;
+        border: 2px solid $yellow;
+        border-radius: 8px;        
+        z-index: 2;
+        
+        &:hover {
+            color: $white;
+            background: $yellow;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        &:active {
+            color: $white;
+            background: $yellow;
+        }
+    }
+}
+
+.hat {
+    position: absolute;
+    max-width: 100%;
+    bottom: -200px;
+
+    &1 {
+        left: 10%;
+    }
+    &2 {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    &3 {
+        right: 10%;
+    }
+    &-animate1 {
+        @include animation(moveandrotate1 1.5s linear infinite);
+    }
+    &-animate2 {
+        @include animation(moveandrotate2 1.7s linear infinite);
+    }
+    &-animate3 {
+        @include animation(moveandrotate3 1.4s linear infinite);
+    }
+}
+
+.switch {
+    font-family: $averia;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 50px;
+    overflow: hidden;
+    @include font-size(20);
+
+    & > div > div {
+        color: $white;
+        padding: 6px 12px;
+        height: 40px;
+        margin-bottom: 60px;
+        display: inline-block; 
+    }
+    & div:first-child {
+        @include animation(display 10s linear infinite);
+    }
+    & div div {
+        background: $dark-silver;
+    }
+    & div:first-child div {
+        background: $yellow;
+    }
+    & div:nth-child(2) div {
+        background: $silver;
+    }
+    & div:last-child div {
+        background: $yellow;
+    }
+}
+
+#canvas {
+    position: absolute;
+    min-height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.replay {
+    background: #fff;
+    margin: 0 0 0 0;
+    padding: 40px 0 80px 0;
+    text-align: center;
+}
+
+@keyframes display {
+    0% {margin-top: -276px;}
+    5% {margin-top: -182px;}
+    34% {margin-top: -182px;}
+    39% {margin-top: -88px;}
+    68% {margin-top: -88px;}
+    73% {margin-top: 0;}
+    96.99% {margin-top: 0;}
+    97% {margin-top: -276px;}
+    100% {margin-top: -276px;}
+}
+
+@keyframes moveandrotate1 {
+    50% {
+        @include transform(translate(0px, -700px) rotate(180deg));
+    }
+    100% {
+        @include transform(translate(100px, 0) rotate(360deg));
+    }
+}
+@keyframes moveandrotate2 {
+    50% {
+        @include transform(translate(0px, -900px) rotate(180deg));
+    }
+    100% {
+        @include transform(translate(-50px, 0) rotate(360deg));
+    }
+}
+@keyframes moveandrotate3 {
+    50% {
+        @include transform(translate(0px, -690px) rotate(180deg));
+    }
+    100% {
+        @include transform(translate(50px, 0) rotate(360deg));
+    }
+}

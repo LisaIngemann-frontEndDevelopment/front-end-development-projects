@@ -1,0 +1,148 @@
+/* Board Game Page */
+.board-game  {
+    background: $light-blue;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    & h2 {
+        margin: 0 20px 5px 20px;
+        text-align: center;
+    }
+    &-UI {
+        background: $dark-silver;
+        margin: 0 auto;
+        max-width: 800px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding-top: 15px;
+        position: relative;
+    }
+    &-flex {
+        display: flex;
+    
+        &__paragraph {
+            flex: 1;
+            color: $white;
+            margin-right: 20px;
+            text-align: right;
+        }
+        &__dice {
+            flex: 1;
+            margin-bottom: 20px;
+    
+            & .icon-dice {
+                display: block;
+                color: $white; 
+                font-size: 50px;
+                padding: 5px;
+
+                &:hover {
+                    color: $light-blue;
+                    cursor: pointer;
+                }
+                &:active {
+                    color: $silver;
+                }
+            }
+        }
+    
+        @media screen and (max-width: $breakpoint-smallest) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            &__paragraph {
+                text-align: center;
+            }
+            &__link {
+                text-align: center;
+                margin-top: -15px;
+            }
+        }
+    }
+}
+
+.dice-container {
+    width: 60px;
+    height: 60px;
+}
+.icon-dice {
+    transform: rotate(0deg);
+    transition: transform 1s linear;
+}
+.icon-dice.rotate {
+    transform: rotate(720deg);
+    transition: transform 1s linear;
+}
+
+.canvas {
+    display: block; 
+    margin: 0 auto;
+    background: $white;
+    border: 2px solid $dark-silver;
+    border-radius: 10px;
+}
+
+.message-trap {
+    display: none;
+    width: 30%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid $yellow;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 10;
+
+    & h3 {
+        margin-top: 0;
+        color: $dark-silver;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        width: 80%; 
+        top: 150px; 
+    }
+}
+
+.accept-trap {
+    padding: 5px 10px;
+    background: $light-blue;
+    border: 2px solid $dark-silver;
+    border-radius: 8px;
+
+    &:hover {
+        cursor: pointer;
+        color: $white;
+        background: $dark-silver;
+        text-decoration: none;
+    }
+}
+
+.goal-message {
+    @extend .message-trap;
+}
+
+.choose-char_btn {
+    position: relative;
+    top: 30px;
+}
+
+.bead-tokens {
+    position: relative;
+    background: blue;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.bead1 {
+    position: absolute;
+    bottom: 715px;
+    left: 220px;
+}
+.bead2 {
+    position: absolute;
+    bottom: 715px;
+    left: 250px;
+}

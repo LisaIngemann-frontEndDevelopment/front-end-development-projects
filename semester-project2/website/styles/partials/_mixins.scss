@@ -1,0 +1,37 @@
+@mixin font-size($px) {
+    font-size: ($px/16)+rem;  
+}
+
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
+// drop shadow
+@mixin box-shadow($top, $left, $blur, $size, $color) {
+  -webkit-box-shadow: $top $left $blur $size $color;
+  -moz-box-shadow: $top $left $blur $size $color;
+  box-shadow: $top $left $blur $size $color;
+}
+
+// transition
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Animation
+@mixin animation($args...) {
+  -webkit-animation: $args;
+  animation: $args;
+}
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  transform: $args;
+}

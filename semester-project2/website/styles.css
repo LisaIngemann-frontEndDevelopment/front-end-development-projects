@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-6";
+  src:url("fonts/untitled-font-6.eot");
+  src:url("fonts/untitled-font-6.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-6.woff") format("woff"),
+    url("fonts/untitled-font-6.ttf") format("truetype"),
+    url("fonts/untitled-font-6.svg#untitled-font-6") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-6" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-6" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-baratheon:before {
+  content: "\61";
+}
+.icon-board:before {
+  content: "\62";
+}
+.icon-character:before {
+  content: "\63";
+}
+.icon-clegane:before {
+  content: "\64";
+}
+.icon-dice:before {
+  content: "\65";
+}
+.icon-finale:before {
+  content: "\66";
+}
+.icon-greyjoy:before {
+  content: "\67";
+}
+.icon-lannister:before {
+  content: "\68";
+}
+.icon-logo:before {
+  content: "\69";
+}
+.icon-rules:before {
+  content: "\6a";
+}
+.icon-stark:before {
+  content: "\6b";
+}
+.icon-targaryen:before {
+  content: "\6c";
+}
+.icon-tyrell:before {
+  content: "\6d";
+}

@@ -1,0 +1,91 @@
+/* BlockTags */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: $open-sans;
+    margin: 0;
+    padding: 0;
+    background: $light-blue;
+}
+h1 {
+    @include font-size(32);
+    font-family: $averia;
+    color: $dark-silver;
+    text-align: center;
+}
+h2 {
+    @include font-size(28);
+    font-family: $averia;
+    color: $yellow;
+}
+h3 {
+    @include font-size(24);
+    font-family: $averia;
+    color: $silver;
+}
+a {
+    text-decoration: none;
+    color: $dark-silver;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: underline;
+        color: $yellow;
+    }
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+.container-content {
+    padding-bottom: 260px;;
+}
+
+.button-main {
+    color: #fff;
+    font-family: $bowlby;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background: $dark-silver;
+    border-radius: 8px;
+
+    &:hover {
+        text-decoration: none;
+        color: $dark-silver;
+        background: $light-blue;
+        cursor: pointer;
+    }
+    &:active {
+        color: $dark-silver;
+        background: $light-blue;
+    }
+}
+
+.button-secondary {
+    color: #fff;
+    font-family: $bowlby;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    background: $yellow;
+    border-radius: 8px;
+
+    &:hover {
+        text-decoration: none;
+        color: $yellow;
+        background: $dark-grey;
+        cursor: pointer;
+    }
+    &:active {
+        color: $yellow;
+        background: $dark-grey;
+    }
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1000px;
+}

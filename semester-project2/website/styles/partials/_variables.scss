@@ -1,0 +1,25 @@
+// fonts
+
+// @import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700|Open+Sans:400,700,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700|Bowlby+One+SC|Open+Sans:400,700,800&display=swap');
+$bowlby: "Bowlby One SC", cursive;
+$averia: "Averia Serif Libre", cursive;
+$open-sans: "Open Sans", sans-serif;
+
+// colors
+$yellow: #D3A52F;
+$silver: #8C98A5;
+$dark-silver: #5A6C7A;
+$light-blue: #C7D8E2;
+$grey: #58595B;
+$light-grey: #D1D3D4;
+$dark-grey: #414042;
+$white: #ffffff;
+$black: #ffffff;
+
+// breakpoints
+$breakpoint-medium: 1000px;
+$breakpoint-tablet: 840px;
+$breakpoint-small: 650px;
+$breakpoint-smallest: 420px;

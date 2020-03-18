@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home Decor - Decorate your home with help from us.">
+    <meta name="keywords" content="home decor, decoration, home, luxurious, comfortable, colorful, stylish, inpiration, contact, buy decorations">
+    <meta name="author" content="Lisa Ingemann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto+Slab&display=swap" rel="stylesheet">
+    <script> </script>
+    <title>Home Decor</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>   
+        <div class="logo"></div> 
+        <nav>
+            <div class="menu">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo for HOME DECOR."></a>
+                <nav class="navigation">
+                    <input type="checkbox" id="hamburger_menu" role="button">
+                    <label for="hamburger_menu" class="mobile_menu"><i class="fas fa-ellipsis-v"></i></label>
+                    <ul class="main_nav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="#">Categories<i class="fas fa-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="#">Stylish</a></li>
+                                <li><a href="#">Luxurious</a></li>
+                                <li><a href="#">Colorful</a></li>
+                                <li><a href="#">Comfort</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#">Inspiration</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- Introduction Section -->
+        <section class="content">
+            <h1>HOME DECOR will help you pick decorations for your home.</h1>
+            <div class="introduction">
+                <div class="introduction__item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores maiores 
+                        consectetur sequi animi ad? Aliquam architecto.</p>
+                    <div class="btn_container">
+                        <a class="btn" href="#">Buy Decorations</a>
+                    </div>
+                </div>
+                <div class="introduction__item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam, ab, minus 
+                        assumenda rem dignissimos beatae voluptates!</p>
+                    <div class="">
+                        <a class="btn" href="#">Get Inspired</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspiration Section -->
+        <section class="content">
+            <h2>Get Inspired by Decoration Displays</h2>
+            <div class="inspiration">
+                <a href="#"><img src="images/decor1.jpg" class="inspiration__item" alt="Picture of nuts, pinecones cookies shaped like stars and cinamon sticks."></a>
+                <a href="#"><img src="images/decor2.jpg" class="inspiration__item inspiration__item2" alt="Picture of a living room with many wooden elements and large windows."></a>
+                <a href="#"><img src="images/decor3.jpg" class="inspiration__item inspiration__item3" alt="Picture of a white kitchen with an kitchen island."></a>
+                <a href="#"><img src="images/decor4.jpg" class="inspiration__item inspiration__item4" alt="Picture of a dark grey sofa, chair and a glass coffee table."></a>
+                <a href="#"><img src="images/decor5.jpg" class="inspiration__item" alt="Picture of a living room with a brown couch, wooden floors and white walls."></a>
+                <a href="#"><img src="images/decor6.jpg" class="inspiration__item inspiration__item6" alt="Close up picture of a counter top with many plants and other decorations."></a>   
+            </div>
+            <div class="btn_inspiration">
+                <a class="btn" href="#">See All</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="content">
+            <h2>Contact us for questions or assistance.</h2>
+            <form class="contact_form" action="#" method="GET">
+                <div class="form_elements">
+                    <input class="input_name" type="text" name="name" placeholder="Name*" required>                        
+                    <input class="input_email" type="text" name="email" placeholder="Email*" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"> 
+                    <p class="hint_name">(Name is required)</p>
+                    <p class="hint_email">(Email is required: <br>(example@hotmail.com)</p>
+
+                    <input class="input_topic" type="text" name="topic" placeholder="Topic"> 
+                    <p class="hint_topic">(Topic is not required)</p>
+    
+                    <textarea class="input_message" name="message" maxlength="250" placeholder="Message*" required></textarea>  
+                    <p class="hint_message">(Max 250 characters)</p>
+                </div>
+
+                <div class="submit_form">
+                    <input class="send_message" type="submit" name="send" value="Contact Us"> 
+                </div>                         
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social-media">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="copyright">
+            <p>&copy; HOME DECOR</p>
+        </div>
+    </footer>
+</body>
+</html>
