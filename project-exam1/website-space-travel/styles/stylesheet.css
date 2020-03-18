@@ -1,0 +1,3328 @@
+/* Global/Text Elements */
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    margin: 0; 
+}
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2 {
+    font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+}
+h1 {
+    color: #2E3192;
+}
+h2 {
+    color: #DC2726;
+}
+h3 {
+    color: #DC2726;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h1_red {
+    color: #DC2726;
+}
+.h1_light {
+    color: #40e0d0;
+}
+.h1_red a {
+    color: #DC2726;
+    font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif; 
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s; 
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.h1_red a:hover {
+    color: #2E3192;  
+}
+.h1_red a:active {
+    color: #2E3192; 
+}
+.content {
+    position: relative;
+    margin: 100px auto;
+    padding: 0;
+    max-width: 1000px;
+}
+.section_black {
+    background-color: #000;
+}
+.content_bottom {
+    margin: 100px auto 200px auto;
+    padding: 0;
+    max-width: 1000px;
+    text-align: center;
+    overflow: auto;
+}
+.breadcrumbs {
+    position: absolute;
+    top: 660px;
+    left: 20px;
+    color: #929292;
+    font-size: 14px;
+}
+.breadcrumbs a {
+    color: #414042;
+}
+.breadcrumbs a:hover {
+    color: #40e0d0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Footer*/
+footer {
+    position: relative;
+    background: #414042;
+    height: 200px; 
+}
+.NASA_link {
+    position: absolute;
+    right: 40px;
+    bottom: 90px;
+}
+.NASA_link a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.NASA_link a:hover {
+    color: #40e0d0;
+}
+.NASA_link a:active {
+    color: #40e0d0;
+}
+.copyright {
+    color: #fff;
+    font-size: 10px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    max-width: 500px;
+}
+.copyright p {
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+    margin: 0 20px 0 20px;
+}
+.social_media {
+    text-align: center;
+    margin: 0 auto;
+}
+.fab {
+    color: #fff;
+    font-size: 30px;
+    margin: 60px 5px 5px 5px;
+    padding: 15px;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.fab:hover {
+    color: #40e0d0;
+}
+.fab:active {
+    color: #40e0d0;
+}
+
+/* Header */
+i:hover {
+    cursor: pointer;
+}
+.header_background_blue {
+    background: url(../images/bg_blue.svg) no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+.header_background_red {
+    background: url(../images/bg_red.svg) no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+.img_right {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 800px;
+    z-index: 1;
+}
+.logo {
+    position: relative;
+    z-index: 40;
+    float: left;
+    margin: 25px 0 0 50px;
+    padding: 0;
+    font-size: 50px;
+}
+.logo a {
+    color: #40e0d0;
+    font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+}
+.logo a:hover {
+    color: #2E3192;
+    cursor: pointer;
+}
+.logo a:active {
+    color: #2E3192;
+}
+.logo_red {
+    position: relative;
+    z-index: 40;
+    float: left;
+    margin: 25px 0 0 50px;
+    padding: 0;
+    font-size: 50px;
+}
+.logo_red a {
+    color: #40e0d0;
+    font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+}
+.logo_red a:hover {
+    color: #DC2726;
+    cursor: pointer;
+}
+.logo_red a:active {
+    color: #DC2726;
+}
+.page_overview {
+    display: block;
+    padding: 250px 20px 20px 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.page_description {
+    color: #ffffff;
+}
+.page_heading {
+    color: #40e0d0;
+}
+
+/* Main Nav */
+.main_nav, .main_nav_red {
+    display: block;
+}
+ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    text-align: center;
+    float: right;
+    z-index: 21;
+}
+li {
+    display: inline-block;
+}
+.main_nav_red li a {
+    display: block;
+    height: 45px;
+    padding: 16px 13px 0 13px;
+    margin-right: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2E3192;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.main_nav_red li a:after {
+    position: relative;
+    content: "";
+    display: block;
+    width:0;
+    height: 8px;
+    margin: 2px auto 0 auto;
+    background: #2E3192;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.main_nav_red li a:hover:after {
+    width: 100%;
+    background: #DC2726;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.main_nav_red li a:hover {
+    color: #DC2726; 
+    cursor: pointer;
+}
+.main_nav_red li a:active {
+    color: #DC2726; 
+}
+li a {
+    display: block;
+    height: 45px;
+    padding: 16px 13px 0 13px;
+    margin-right: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #DC2726;
+    border-bottom: 8px solid transparent;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+li a:after {
+    position: relative;
+    content: "";
+    display: block;
+    width:0;
+    height: 8px;
+    margin: 2px auto 0 auto;
+    background: #DC2726;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+li a:hover:after {
+    width: 100%;
+    background: #2E3192;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+li a:hover {
+    color: #2E3192; 
+    cursor: pointer;
+}
+li a:active {
+    color: #2E3192; 
+}
+.active {
+    color: #2E3192;
+}
+.active:after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin: 2px auto 0 auto;
+    background: #2E3192;
+}
+.icon-home-space, .icon-live-space, .icon-mars-space,.icon-launches-space,.icon-contact-space {
+    display: none;
+}
+.main_nav_red .active_red {
+    color: #DC2726;
+}
+.main_nav_red .active_red:after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin: 2px auto 0 auto;
+    background: #DC2726;
+}
+.hamburger_cntnr i {
+    display: none;
+}
+.hamburger_cntnr_red i {
+    display: none;
+}
+.hamburger_cntnr i:active {
+    color: #2E3192;
+}
+.hamburger_cntnr_red i:active {
+    color: #DC2726;
+}
+
+/* Fixed Main Nav */
+.fixed_main_nav {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    background: rgba(255,255,255,0.95);
+    width: 100%;
+    z-index: 20;
+    text-align: right;
+    -webkit-box-shadow: 5px 1px 18px #2a2a2a80;
+    -moz-box-shadow: 5px 1px 18px #2a2a2a80;
+    box-shadow: 5px 1px 18px #2a2a2a80;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.fixed_main_nav a {
+    display: inline-block;
+    height: 50px;
+    color: #DC2726;
+    padding: 16px 13px 0 13px;
+    margin-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.fixed_links_red a:after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 0;
+    height: 8px;
+    margin: 7px auto 0 auto;
+    background: #2E3192;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.fixed_links a:after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 0;
+    height: 8px;
+    margin: 7px auto 0 auto;
+    background: #DC2726;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.fixed_links a:hover:after {
+    width: 100%;
+    background: #2E3192;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.fixed_links_red a:hover:after {
+    width: 100%;
+    background: #DC2726;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.fixed_main_nav_red a {
+    color: #2E3192;
+}
+.fixed_main_nav a:hover {
+    color: #2E3192; 
+}
+.fixed_main_nav_red a:hover {
+    color: #DC2726;
+}
+.fixed_main_nav a:active {
+    color: #2E3192; 
+}
+.fixed_main_nav_red a:active {
+    color: #DC2726;
+}
+.fixed_main_nav i {
+    display: none;
+}
+.fixed_main_nav .fixed_active {
+    color: #2E3192;
+}
+.fixed_main_nav .fixed_active:after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin: 7px auto 0 auto;
+    background: #2E3192;
+}
+.fixed_main_nav .fixed_active_red {
+    color: #DC2726;
+}
+.fixed_main_nav .fixed_active_red:after {
+    position: relative;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    margin: 7px auto 0 auto;
+    background: #DC2726;
+}
+.fa-bars {
+    color: #DC2726;
+    font-size: 50px;
+}
+#logo_fixed {
+    float: left;
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-size: 30px;
+}
+#logo_fixed a {
+    color: #2E3192;
+    font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+    border-bottom: none;
+    background: none;
+}
+#logo_fixed a:hover {
+    color: #40e0d0;
+    border: none;
+    text-decoration: none;
+}
+#logo_fixed a:active {
+    color: #40e0d0;
+    border: none;
+    text-decoration: none;
+}
+#logo_fixed_red {
+    float: left;
+    margin: 0 0 0 20px;
+    padding: 0;
+    font-size: 30px;
+}
+#logo_fixed_red a {
+    color: #DC2726;
+    font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+    border: none;
+    background: none;
+}
+#logo_fixed_red a:hover {
+    color: #40e0d0;
+    border: none;
+    text-decoration: none;
+}
+#logo_fixed_red a:active {
+    color: #40e0d0;
+    border: none;
+    text-decoration: none;
+}
+
+/* Pages */
+/* HOME */
+.img_left_home {
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    width: 300px;
+}
+.img_btm_left_home {
+    position: absolute;
+    left: 50px;
+    bottom: 90px;
+    width: 300px;
+}
+
+/* Top Section */
+.top_section {
+    display: flex;
+    margin: 0 20px;
+}
+.ISS_section {
+    flex: 3;
+    margin-right: 20px;
+}
+.humans_section {
+    flex: 2;
+    margin-left: 40px;
+}
+.show_map {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    background: #2E3192;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 40px;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+} 
+.show_map:hover {
+    color: #2E3192;
+    background: #40e0d0;
+    cursor: pointer;
+} 
+.mapOfISSLocation {
+    display: block;
+}
+.map {
+    width: 100%;
+    height: 250px;
+}
+.icon-human-space {
+    color: #2E3192;
+    font-size: 50px;
+    float: left;
+    margin-left: -10px;
+
+}
+.icon-human-space:hover {
+    cursor: default;
+}
+
+/* Mars/Launch Section */
+.mars_launches_section {
+    padding: 100px 0;
+}
+.mars_launches_section p {
+    color: #eee;
+}
+.mars_launches_section h1 {
+    color: #40e0d0;
+    margin-top: 0;
+}
+.launch_mars_button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    background: #2E3192;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.launch_img {
+    position: relative;
+    top: 4px;
+    width: 100%;
+    -o-transition: 0.8s; 
+    -moz-transition: 0.8s; 
+    -webkit-transition: 0.8s; 
+    transition: 0.8s;
+}
+.mars_img { 
+    position: relative;
+    top: 4px;  
+    width: 100%;
+    -o-transition: 0.8s; 
+    -moz-transition: 0.8s; 
+    -webkit-transition: 0.8s; 
+    transition: 0.8s;
+}
+.mars_flex, .launches_flex {
+    display: flex;
+    margin: 20px 20px 40px 20px;
+}
+.mars_text, .mars_graphic, .launches_text, .launches_graphic {
+    flex: 1;
+}
+.mars_text p, .launches_text p {
+    display: list-item;
+    margin-left: 20px;
+}
+.mars_graphic, .launches_graphic {
+    position: relative;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.mars_graphic:hover > .image_cntnr > .launch_mars_button { 
+    color: #2E3192;
+    background: #40e0d0;
+}
+.image_cntnr {
+    overflow: hidden;
+}
+.image_cntnr:hover .mars_img {
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.launches_graphic:hover > .image_cntnr > .launch_mars_button { 
+    color: #2E3192;
+    background: #40e0d0;
+}
+.image_cntnr:hover .launch_img {
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.mars_graphic:active > .image_cntnr > .launch_mars_button { 
+    color: #2E3192;
+    background: #40e0d0;
+}
+.launches_graphic:active > .image_cntnr > .launch_mars_button { 
+    color: #2E3192;
+    background: #40e0d0; 
+}
+
+/* Live Video Section */
+.content_live_video_section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.live_video_section {
+    margin: 0 20px;
+}
+.live_video_section h1 {
+    text-align: center;
+}
+.live_video_flex {
+    display: flex;
+    margin: 50px 0 200px 0;
+}
+.live_video_flex h2 {
+    color: #2E3192;
+    margin-top: 0; 
+}
+.live_video_flex p {
+    margin-bottom: 70px;
+}
+.live_cta, .science_cta, .TV_cta {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background: #2E3192;
+    text-align: center;
+    font-weight: bold;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 20px 0;
+    width: 100%;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.live_video_card_link {
+    color: #414042;
+    flex: 1;
+}
+.nasa_live_cta {
+    position: relative;
+    background: #eeeeee;
+    border-radius: 40px;
+    padding: 20px;
+    min-height: 250px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nasa_science_cta {
+    position: relative;
+    min-height: 250px;
+    background: #eeeeee;
+    border-radius: 40px;
+    padding: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nasa_TV_cta {
+    position: relative;
+    min-height: 250px;
+    background: #eeeeee;
+    border-radius: 40px;
+    padding: 20px;
+    cursor: pointer;
+}
+.nasa_live_cta:hover > span { 
+    color: #2E3192;
+    background: #40e0d0; 
+}
+.nasa_science_cta:hover > span { 
+    color: #2E3192;
+    background: #40e0d0; 
+}
+.nasa_TV_cta:hover > span { 
+    color: #2E3192;
+    background: #40e0d0; 
+}
+.nasa_live_cta:active > span { 
+    color: #2E3192;
+    background: #40e0d0; 
+}
+.nasa_science_cta:active > span { 
+    color: #2E3192;
+    background: #40e0d0; 
+}
+.nasa_TV_cta:active > span { 
+    color: #2E3192;
+    background: #40e0d0; 
+}
+
+/* LIVE PAGE */
+.img_left_live {
+    position: absolute;
+    top: 435px;
+    left: 50px;
+    width: 300px;
+}
+.img_btm_left_live {
+    position: absolute;
+    left: 50px;
+    bottom: 130px;
+    width: 300px;
+}
+
+/* NASA Live */
+.nasa_live {
+    position: relative;
+    text-align: left;
+    margin: 120px 20px 0 20px;
+}
+#nasa_live_anchor {
+    height: 1px;
+}
+.nasa_live p {
+    display: block;
+    margin-bottom: 30px;
+}
+.iframe_cntnr {
+    padding-top: 56.25%;
+    position: relative;
+}
+.iframe_cntnr iframe {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: none;
+}
+
+/* NASA Science Live */
+.iframe_cntnr_science {
+    padding-top: 56.25%;
+    position: relative;
+}
+.iframe_cntnr_science iframe {
+    border: 3px solid #40e0d0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.nasa_science_live {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px 100px 20px;
+}
+.nasa_science_live p {
+    color: #eee;
+}
+.episode_selectors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 -1px;
+    text-align: center;
+}
+.episode_selectors a {
+    flex: 1;
+    font-size: 100%;
+    color: #fff;
+    background: #414042;
+    padding: 20px 20px;
+    border: 1px solid #000;
+    border-bottom: none;
+    cursor: pointer;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.episode_selectors a:hover {
+    color: #414042;
+    background: #40e0d0;
+}
+.episode_selectors a:active {
+    color: #414042;
+    background: #40e0d0;
+}
+.science_active {
+    color: #414042 !important;
+    background: #40e0d0!important;
+}
+.episodeTitle {
+    color: #eee;
+} 
+.description {
+    margin-bottom: 20px;
+}
+
+/* NASA TV */
+.flex {
+    display: flex;
+}
+.nasa_tv {
+    flex: 3;
+    text-align: left;
+    padding: 0 20px;
+}
+.nasa_tv_img {
+    flex: 2;
+    padding-top: 70px;
+    margin-right: 20px;    
+    position: relative;
+    overflow: hidden;
+}
+.nasa_tv_img img {
+    position: relative;
+    top: 4px;
+    max-width: 100%;
+    -o-transition: 0.8s; 
+    -moz-transition: 0.8s; 
+    -webkit-transition: 0.8s; 
+    transition: 0.8s;
+}
+.nasa_tv_img:hover > #nasa_tv_img > .nasa_tv_image {
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.red_button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 40px 20px 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    font-weight: bold;
+    color: #fff;
+    background: #DC2726;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.red_button:hover {
+    background: #40e0d0;
+}
+.red_button:active {
+    background: #40e0d0;
+}
+#nasa_tv_img:hover + .red_button { 
+    background: #40e0d0; 
+}
+#nasa_tv_img:active + .red_button { 
+    background: #40e0d0; 
+}
+
+/* LAUNCHES PAGE */
+.img_left_launches {
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    width: 150px;
+}
+.img_btm_left_launches {
+    position: absolute;
+    left: 50px;
+    bottom: 90px;
+    width: 150px;
+}
+
+/* Timeline */
+.timeline_end {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 1650px;
+    left: 0;
+    max-width: 1300px;
+    right: 0;
+    z-index: 10;
+}
+.timeline_end span {
+    display: block;
+    margin: 0 20px;
+    height: 2px;
+    background: #929292;
+}
+.hint {
+    position: relative;
+    color: #929292;
+    margin-right: 120px;
+    text-align: right;
+}
+.backToTop {
+    position: absolute;
+    top: 1700px;
+    left: 50%;
+    margin-left: -75px;
+    max-width: 400px;
+    z-index: 15;
+}
+.backToTop p {
+    color: #DC2726;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 20px;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.backToTop .icon-totop-space {
+    position: absolute;
+    top: 0px;
+    right: 40px;
+    text-decoration: none;
+    margin-right: 20px; 
+    font-size: 40px;
+    color: #DC2726;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.backToTop a:hover p {
+    color: #40e0d0;
+    cursor: pointer;
+}
+.backToTop a:active p {
+    color: #40e0d0;
+}
+.backToTop a:hover .icon-totop-space {
+    color: #40e0d0;
+    cursor: pointer;
+}
+.backToTop a:active .icon-totop-space {
+    color: #40e0d0;
+}
+.timeline_section {
+    position: relative;
+    left: -50px;
+    margin: 100px auto 200px auto;
+    max-width: 1200px;
+    height: 900px;
+    overflow: hidden;
+}
+.timeline_section h1 {
+    text-align: center;
+}
+.timeline {
+    height: 100%;
+    width: 110%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+}
+.timeline_item {
+    display: block;
+    position: relative;
+    max-width: 450px;
+    overflow: hidden;
+}
+
+/* Posistioning Timeline Items */
+.timeline > div:nth-of-type(2) {
+    position: absolute;
+    top: 90px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(3) {
+    position: absolute;
+    top: 350px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(4) {
+    position: absolute;
+    top: 750px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(5) {
+    position: absolute;
+    top: 1065px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(6) {
+    position: absolute;
+    top: 1210px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(7) {
+    position: absolute;
+    top: 1350px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(8) {
+    position: absolute;
+    top: 1575px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(9) {
+    position: absolute;
+    top: 1840px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(10) {
+    position: absolute;
+    top: 1985px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(11) {
+    position: absolute;
+    top: 2130px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(12) {
+    position: absolute;
+    top: 2355px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(13) {
+    position: absolute;
+    top: 2620px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(14) {
+    position: absolute;
+    top: 2765px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(15) {
+    position: absolute;
+    top: 3120px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(16) {
+    position: absolute;
+    top: 3340px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(17) {
+    position: absolute;
+    top: 3515px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(18) {
+    position: absolute;
+    top: 3775px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(19) {
+    position: absolute;
+    top: 4040px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(20) {
+    position: absolute;
+    top: 4215px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(21) {
+    position: absolute;
+    top: 4520px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(22) {
+    position: absolute;
+    top: 4740px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(23) {
+    position: absolute;
+    top: 5045px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(24) {
+    position: absolute;
+    top: 5220px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(25) {
+    position: absolute;
+    top: 5445px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(26) {
+    position: absolute;
+    top: 5580px;
+    right: 120px;
+}
+.timeline > div:nth-of-type(27) {
+    position: absolute;
+    top: 5850px;
+    left: 120px;
+}
+.timeline > div:nth-of-type(28) {
+    position: absolute;
+    top: 6005px;
+    right: 120px;
+}
+
+.timeline_item h2 {
+    font-size: 20px;
+    color: #2E3192;
+}
+.line_divider {
+    height: 2px;
+    width: 100%;
+    background: #929292;
+    margin: 0 0 20px 0;
+}
+.timeline_text {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+.timeline_text p {
+    margin-top: 0;
+}
+.timeline_image {
+    float: left;
+    width: 48%;
+}
+.timeline_image img {
+    width: 100%;
+}
+
+/* Timeline Line */
+.timeline_line {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -50px;
+    text-align: center;
+}
+.vertical_line {
+    position: absolute;
+    top: 50px;
+    right: 50%;
+    width: 4px;
+    height: 100%;
+    background: #2E3192;
+    z-index: -1;
+}
+.active_year p {
+    display: block;
+    color: #fff;
+    background: #2E3192;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 50px 0;
+    padding: 10px 0;
+    width: 100px;
+}
+.active_year .timeline_year_close {
+    margin: 100px 0;
+}
+.inactive_year p {
+    display: block;
+    color: #000;
+    background: #dddddd;
+    padding: 5px 0;
+    margin-left: 25px;
+    width: 50px;
+}
+#bottomYear {
+    margin-bottom: 400px;
+}
+
+/* Hide/Show Timeline Item */
+.timeline_selectors {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.selector {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    border: 3px solid #929292;
+    margin-left: 5px;
+    padding: 10px;
+}
+.selector:hover {
+    background: #929292 !important;
+    cursor: pointer;
+}
+.selector:active {
+    background: #929292;
+}
+.selector1 {
+    background: #929292;
+}
+.sputnik1_h2, .sputnik1_text, .sputnik1_img {
+    display: block;
+}
+.sputnik2_h2, .sputnik2_text, .sputnik2_img {
+    display: none;
+}
+
+/* Upcoming Launches */
+.launch_section {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 100px 0;
+}
+.launch_schedule {
+    position: relative;
+    margin: 0 20px;
+    height: 800px;
+    overflow: auto;
+}
+
+/* Scrollbar for webkit browsers */
+.launch_schedule::-webkit-scrollbar {
+    width: 20px;
+}
+.launch_schedule::-webkit-scrollbar-track {  
+    border-radius: 10px;
+}
+.launch_schedule::-webkit-scrollbar-thumb {
+    background: #40e0d0; 
+    border-radius: 10px;
+}
+.launch_schedule::-webkit-scrollbar-thumb:hover {
+    background: #2E3192; 
+}
+
+.launch_section h1 {
+    color: #40e0d0;
+    margin: 0 0 20px 20px;
+}
+.scroll_content_links {
+    text-align: right;
+    position: relative;
+    top: -10px;
+}
+.scroll_content_links a {
+    color: #40e0d0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.scroll_content_links a:last-child {
+    margin-right: 40px;
+    margin-left: 20px;
+}
+.scroll_content_links a:hover {
+    color: #eee;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.scroll_content_links a:active {
+    color: #eee;
+}
+#scroll_top {
+    height: 1px;
+    position: absolute;
+    top: -200px;
+}
+.last_launch_item {
+    position: relative;
+}
+#scroll_bottom {
+    height: 1px;
+    position: absolute;
+    bottom: 840px;
+}
+.offwhite_text {
+    color: #eee;
+    margin-left: 20px;
+}
+.launch_schedule h2 {
+    margin: 5px 20px 5px 20px;
+    color: #40e0d0;
+}
+.launch_sub_title {
+    color: #fff;
+    font-size: 20px;
+}
+.launch_schedule p {
+    color: #000;
+}
+.launch_schedule_item {
+    margin: 0;
+    background: #929292;
+}
+.launch_title {
+    background: #414042; 
+    padding: 10px 0;
+    overflow: hidden;  
+}
+.launch_description {
+    padding: 10px 20px;
+    margin-bottom: 40px;
+}
+#last_description {
+    margin-bottom: 0;
+}
+.archived_link { 
+    margin: 0 20px;
+}
+.archived_launches {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 70px auto 20px auto;
+    padding: 20px 50px;
+    background: #2E3192;
+    border-radius: 40px;
+    width: 100%;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+
+}
+.archived_launches:hover {
+    color: #2E3192;
+    background: #40e0d0;
+}
+
+/* Launch Video */
+.inline_link {
+    color: #2E3192; 
+    text-decoration: underline;
+    font-weight: bold; 
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.inline_link:hover {
+    color: #40e0d0; 
+}
+.inline_link:active {
+    color: #40e0d0; 
+}
+.inline_link_red {
+    color: #DC2726; 
+    text-decoration: underline;
+    font-weight: bold; 
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.inline_link_red:hover {
+    color: #40e0d0;
+}
+.inline_link_red:active {
+    color: #40e0d0;
+}
+#launch_anchor {
+    height: 1px;
+}
+.launch_video_section {
+    margin: 100px auto;
+    max-width: 1000px;
+}
+.launch_videos {
+    margin: 0 20px;
+}
+.small_screen_h2 {
+    display: none;
+}
+.video_selector_container {
+    display: flex;  
+    margin-bottom: 200px;
+}
+.video_selector_container h2 {
+    color: #2E3192;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 5px;
+}
+.video_selector_item {
+    flex: 1;
+    position: relative;
+    background: #eeeeee;
+    margin-right: 20px;
+}
+.video_selector_item img {
+    width: 100%;
+}
+.video_selector_container .video_selector_item:last-child {
+    margin-right: 0;
+}
+.video_button {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    max-width: 120px;
+    margin: -40% auto 0 auto;
+    border-radius: 40px;
+    background: #2E3192;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#amos_button:hover > .amos_button, #zarya_button:hover > .zarya_button, #juno_button:hover > .juno_button { 
+    color: #2E3192;
+    background: #40e0d0; 
+    cursor: pointer;
+}
+#juno_button:hover, #zarya_button:hover, #amos_button:hover {
+    cursor: pointer;
+}
+#juno_button:active, #zarya_button:active, #amos_button:active {
+    cursor: pointer;
+}
+.video_container {
+    display: none;
+    padding-top: 56.25%;
+    position: relative;
+    margin-bottom: 50px;
+}
+.video_description {
+    display: block;
+}
+.amos_launch {
+    display: none;
+    border: none;
+}
+.juno_launch {
+    display: none;
+    border: none;
+}
+.zarya_launch {
+    display: none;
+    border: none;
+}
+.video_container iframe {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.small_screen p {
+    display: none;
+}
+
+/* MARS PAGE */
+.img_left_mars {
+    position: absolute;
+    top: 380px;
+    left: 50px;
+    width: 400px;
+}
+.img_btm_left_mars {
+    position: absolute;
+    bottom: 165px;
+    left: 50px;
+    width: 350px;
+}
+
+/* Weather Report Section */
+.mars_weather_section {
+    margin: 120px 20px 0 20px;   
+}
+.mars_weather_section h1 {
+    color: #DC2726;   
+}
+.mars_weather_image {
+    background: url(../images/insight.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 230px;
+}
+.weather_h2 {
+    max-width: 325px;
+    float: right;
+    margin-right: 50px;
+}
+.weather_h2 h2 {
+    color: #fff; 
+    font-size: 35px;
+}
+.insight_title {
+    font-size: 45px;
+}
+.insight_description {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 380px;
+    margin-top: 20px;
+    padding: 2px 10px 2px 50px;
+    float: left;
+}
+.insight_location {
+    position: relative;
+    top: 140px;
+    max-width: 300px;
+    margin-left: 50px;
+}
+.insight_location p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold; 
+}
+.fahrenheit, .celsius {
+    color: #929292;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.active_temperature {
+    color: #414042;
+    font-weight: bold;
+}
+.fahrenheit:hover, .celsius:hover {
+    color: #414042;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fahrenheit:active, .celsius:active {
+    color: #414042;
+}
+.temperature_button {
+    color: #929292;
+    margin-left: 4px;
+}
+.compare_weather {
+    margin: 0 auto 80px auto;
+    max-width: 320px;
+}
+.compare_error_cntnr {
+    display: block;
+}
+.compare_error {
+    color: #DC2726;
+    width: 100%;
+}
+.noInputErr {
+    display: none;
+    position: relative;
+    top: -30px;
+    margin-bottom: 0;
+}
+.wrongInputErr {
+    display: none;
+    position: relative;
+    top: -30px;
+    margin-bottom: 0;
+}
+.compare {
+    display: none;
+    text-align: center;
+    border: 2px solid #929292;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px
+}
+.compare_selectors {
+    color: #929292;
+}
+.compare_btn {
+    display: block;
+    position: relative;
+    top: 5px;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: #DC2726;
+    border-radius: 30px;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.compare_btn:hover {
+    color: #2E3192;
+    background: #40e0d0;
+    cursor: pointer;
+}
+.compare_btn:active {
+    color: #2E3192;
+    background: #40e0d0;
+}
+.input_city {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Report */
+.todays_report {
+    margin-bottom: 40px;
+}
+.today1 {
+    text-align: center;
+    width: 18%;
+    margin-right: 20px;
+    margin-left: 30px;
+    float: left;
+}
+.today2 {
+    width: 21%;
+    margin-right: 10px;
+    margin-left: 30px;
+    float: left;
+}
+.today2 p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.today3 {
+    width: 25%;
+    float: left;
+}
+.today3 p {
+    margin-top: 8px;
+}
+.today1 h3 {
+    font-size: 30px;
+    margin: 0;
+}
+.today1 p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+.report {
+    float: left;
+    width: 13.42%;
+    border: 2px solid #929292;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 1%;
+    margin-bottom: 20px;
+}
+.report7 {
+    margin-right: 0;
+}
+.report_sol {
+    margin-bottom: 0;
+}
+.report_date {
+    color: #929292;
+    font-size: 14px;
+    margin: 0;
+}
+.report_temperature {
+    margin-bottom: 2px;
+}
+.report_wind {
+    margin: 0;
+}
+.report_pressure {
+    margin: 0 0 20px 0;
+}
+
+/* Image Slideshow Section */
+.image_slideshow_section {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1000px;
+}
+.image_slideshow {
+    margin: 0 20px;
+}
+.image_slideshow h1 {
+    color: #40e0d0;
+}
+.image_slideshow p {
+    color: #eee;
+}
+.slideshow_container {
+    position: relative; 
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center; 
+}
+.image_container {
+    position: relative;
+    width: 1000%;
+    max-height: 800px;
+    margin: 0;
+    left: 0;
+    -moz-transition: left 2s;
+    -webkit-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+.slideshow_img {
+    float: left;
+    width: 10%;
+    margin: 0;
+    padding: 0;
+}
+.image_information_container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0 20px 5px 10px;
+}
+.image_information_container p {
+    color: #000;
+}
+.btn_container {
+    top: -50px;
+    position: relative;
+    text-align: center;
+}
+.btn_container .active_btn {
+    background: #40e0d0;
+}
+.slider_btn {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 4px solid #40e0d0; 
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.slider_btn:hover {
+    background: #40e0d0;
+    cursor: pointer;
+}
+.slider_btn:active {
+    background: #40e0d0;
+}
+#slider-image-1, #slider-image-2, #slider-image-3, #slider-image-4, #slider-image-5 {
+    position: relative;
+    top: -150px;
+}
+
+/* Mars Rover Video */
+.rover_video_section {
+    margin: 0 20px;
+}
+.rover_video_section h1 {
+    color: #DC2726;
+}
+.rover_video_section h2 {
+    color: #414042;
+    font-size: 20px;
+    margin: 0 0 0 0;
+}
+.rover_video_section p {
+    margin-top: 5px;
+}
+.rover_video {
+    padding-top: 56.25%;
+    position: relative;
+    margin-bottom: 150px;
+}
+.rover_video iframe {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: none;
+    width: 100%;
+}
+
+/* CONTACT PAGE */
+#success_anchor {
+    height: 1px;
+}
+.img_left_contact {
+    position: absolute;
+    top: 525px;
+    left: 50px;
+    width: 300px;
+}
+.img_btm_left_contact {
+        position: absolute;
+        bottom: 140px;
+        left: 50px;
+        width: 300px;
+}
+.contact_h1 {
+    margin: 120px 0 0 20px;
+}
+#success {
+    margin: 100px auto 200px auto;
+    text-align: center;
+}
+.continue_browsing {
+    margin: 50px 20px 0 20px;
+}
+.button_container {
+    margin-top: 40px;
+}
+.button_container a {
+    color: #fff;
+    background: #2E3192;
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-bottom: 2px solid #fff;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+.button_container .button_browse1 {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.button_container .button_browse2 {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.button_browse:hover {
+    color: #2E3192;
+    background: #40e0d0;
+}
+.button_browse:active {
+    color: #2E3192;
+    background: #40e0d0;
+}
+
+/* Form */
+.form_container {
+    position: relative;
+    margin: 0 auto 200px auto;
+    max-width: 1000px;
+}
+.form_elements {
+    margin: 20px;
+    overflow: auto;
+}
+
+/* Submit Button */
+.send_message {
+    color: #fff;
+    background: #2E3192;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+    margin-right: 20px;
+    border: none; 
+    border-radius: 40px;
+    padding: 20px 70px;
+    -webkit-appearance: none;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.send_message:hover {
+    color: #2E3192;
+    background: #40e0d0;
+    cursor: pointer; 
+}
+.send_message:active {
+    color: #2E3192;
+    background: #414042; 
+}
+
+/* Validation */
+.form_error_messages p {
+    position: absolute;
+    color: #DC2726;
+    font-weight: bold;
+    font-size: 14px;
+}
+.errorNME {
+    display: none;
+    text-align: left;
+    top: -5px;
+    left: 20px;
+}
+.errorEMA {
+    display: none;
+    text-align: right;
+    top: -5px;
+    right: 20px; 
+}
+.errorMES {
+    display: none;
+    top: 220px;
+    left: 20px;
+}
+
+/* Form Elements */
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 2px solid #414042;
+    border-radius: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+}
+textarea:hover {
+    border: 2px solid #2E3192;
+}
+textarea:focus {
+    border: 2px solid #2E3192;
+}
+input[type=text] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border: 2px solid #414042;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+.input_name {
+    margin-top: 50px;
+    width: 49%;
+    float: left;
+}
+.input_email {
+    margin-top: 50px;
+    width: 49%;
+    float: right; 
+}
+.input_topic {
+    width: 100%;
+}
+input[type=text]:hover {
+    border: 2px solid #2E3192;
+}
+input[type=text]:focus {
+    border: 2px solid #2E3192;   
+}
+
+/* Hints */
+.hint_name {
+    color: #929292;
+    font-size: 12px;
+    margin: 4px 2% 0 0;
+    width: 49%;
+    float: left;
+    text-align: right;  
+}
+.hint_email {
+    color: #929292;
+    font-size: 12px;
+    margin: 4px 0 40px 0;
+    width: 49%; 
+    float: right;
+    text-align: right;
+}
+.hint_topic {
+    color: #929292;
+    font-size: 12px;
+    margin: 4px 0 40px 0;
+    float: right;
+}
+.hint_message {
+    color: #929292;
+    font-size: 12px;
+    margin: 0;
+    float: right;
+}
+
+/* Responsive */
+@media screen and (max-width : 1200px) {
+    .page_overview {
+        padding-top: 150px;
+    }
+    .img_right {
+        right: -25px;
+        width: 450px;
+    }
+
+    /* Main Nav */
+    .hamburger_cntnr {
+        position: relative;
+        padding: 20px 20px 80px 20px;
+        z-index: 30;
+    }
+    .hamburger_cntnr i {
+        position: absolute;
+        z-index: 21;
+        display: block;
+        top: 20px;
+        right: 60px;
+        padding: 10px;
+    }
+    .hamburger_cntnr i:hover {
+        color: #2E3192;
+    }
+    .hamburger_cntnr_red {
+        position: relative;
+        padding: 20px 20px 80px 20px;
+        z-index: 30;
+    }
+    .hamburger_cntnr_red i {
+        position: absolute;
+        z-index: 21;
+        display: block;
+        top: 20px;
+        right: 60px;
+        padding: 10px;
+        color: #2E3192;
+    }
+    .hamburger_cntnr_red i:hover {
+        color: #DC2726 !important;
+    }
+    .main_nav, .main_nav_red {
+        display: none;
+    }
+    ul {
+        position: absolute;
+        top: 100px;
+        padding: 0;
+        width: 100%;
+    }
+    ul li:last-child {
+        border-bottom: none;
+    }
+    li {
+        position: relative;
+        width: 100%;
+        background: #929292;
+        border-bottom: 1px solid #fff;
+    }
+    .icon-home-space, .icon-live-space, .icon-mars-space,.icon-launches-space,.icon-contact-space {
+        display: block;
+        top: 10px;
+        left: 20px;
+        position: absolute;
+        color: #fff;
+        font-size: 40px;
+        margin-right: 10px; 
+    }
+    li a:hover > .icon-home-space {
+        color: #2E3192; 
+    }
+    li a:hover > .icon-live-space {
+        color: #2E3192; 
+    }
+    li a:hover > .icon-launches-space {
+        color: #2E3192; 
+    }
+    li a:hover > .icon-mars-space {
+        color: #2E3192; 
+    }
+    li a:hover > .icon-contact-space {
+        color: #2E3192; 
+    }
+    li a:active > .icon-home-space {
+        color: #2E3192; 
+    }
+    li a:active > .icon-live-space {
+        color: #2E3192; 
+    }
+    li a:active > .icon-launches-space {
+        color: #2E3192; 
+    }
+    li a:active > .icon-mars-space {
+        color: #2E3192; 
+    }
+    li a:active > .icon-contact-space {
+        color: #2E3192; 
+    }
+    li a {
+        color: #fff;
+        display: block;
+        height: 60px;
+        padding-top: 20px;
+        padding-left: 100px;
+        margin-right: 0;
+        text-align: left;
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    li a:hover {
+        color: #2E3192;
+        border-bottom: none;
+        text-decoration: underline;
+    }
+    li a:active {
+        background: #eee;
+        color: #2E3192;
+        border-bottom: none;
+    }
+    .main_nav_red .active_icon {
+        color: #DC2726;
+    }
+    .main_nav_red li {
+        border-bottom: 1px solid #fff;
+    }
+    .main_nav_red li a {
+        display: block;
+        color: #fff;
+        height: 60px;
+        padding-top: 20px;
+        padding-left: 100px;
+        margin-right: 0;
+        text-align: left;
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .main_nav_red li a:hover {
+        color: #DC2726;
+        border-bottom: none;
+        text-decoration: underline;
+    }
+    .main_nav_red li a:active {
+        background: #eee;
+        color: #DC2726;
+        border-bottom: none;
+    }
+    .main_nav_red li a:hover > .icon-home-space {
+        color: #DC2726; 
+    }
+    .main_nav_red li a:hover > .icon-live-space {
+        color: #DC2726; 
+    }
+    .main_nav_red li a:hover > .icon-launches-space {
+        color: #DC2726; 
+    }
+    .main_nav_red li a:hover > .icon-mars-space {
+        color: #DC2726; 
+    }
+    .main_nav_red li a:hover > .icon-contact-space {
+        color: #DC2726;  
+    }
+    .main_nav_red li a:active > .icon-home-space {
+        color: #DC2726; 
+    }
+    .main_nav_red li a:active > .icon-live-space {
+        color: #DC2726; 
+    }
+    .main_nav_red li a:active > .icon-launches-space {
+        color: #DC2726;  
+    }
+    .main_nav_red li a:active > .icon-mars-space {
+        color: #DC2726; 
+    }
+    .main_nav_red li a:active > .icon-contact-space {
+        color: #DC2726; 
+    }
+    .active_icon {
+        color: #2E3192;
+    }
+    .active {
+        border-bottom: none;
+        background: #eee;
+        color: #2E3192;
+        text-decoration: underline;
+    }
+    .main_nav_red .active_red {
+        border-bottom: none;
+        background: #eee;
+        color: #DC2726;
+        text-decoration: underline;
+    }
+    .main_nav_red li a:after, .main_nav_red li a:hover:after, li a:after, li a:hover:after, .active:after, .main_nav_red .active_red:after {
+        content: none;
+    }
+
+
+    /* Fixed Main Nav */
+    .fixed_main_nav .fixed_active_red:after, .fixed_main_nav .fixed_active:after, .fixed_main_nav_red a:hover:after, .fixed_main_nav a:hover:after, .fixed_main_nav a:after, .fixed_main_nav_red a:after {
+        content: none;
+    }
+    .fixed_main_nav {
+        text-align: left;
+        background: linear-gradient(90deg, rgba(255,255,255,0.95) 48%, rgba(146,146,146,0.95) 100%);
+    } 
+    #fixedHamburgerMenu:hover {
+        color: #2E3192;
+    }
+    #fixedHamburgerMenu:active {
+        color: #2E3192;
+    }
+    #fixedHamburgerMenu_red {
+        color: #2E3192;
+    }
+    #fixedHamburgerMenu_red:hover {
+        color: #DC2726;
+    }
+    #fixedHamburgerMenu_red:active {
+        color: #DC2726;
+    }
+    .hamburger_contnr_red i {
+        color: #2E3192; 
+        top: 0;
+        right: 20px;
+    }
+    .hamburger_contnr_red i:hover {
+        color: #DC2726; 
+    }
+    .hamburger_contnr_red i:active {
+        color: #DC2726; 
+    }
+    .fixed_main_nav i {
+        display: block;
+        position: absolute;
+        top: 3px;
+        right: 15px;
+    }
+    .fixed_links {
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+    .fixed_links_red {
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+    .fixed_links a i {
+        position: absolute;
+        top: 10px;
+        color: #fff;
+        left: 20px;
+    }
+    .fixed_links_red a i {
+        position: absolute;
+        top: 10px;
+        color: #fff;
+        left: 20px;
+    }
+    .fixed_links a .active_icon {
+        color: #2E3192;
+    }
+    .fixed_links_red a .active_icon {
+        color: #DC2726;
+    }
+    .fixed_links_red a .active_icon {
+        color: #DC2726;
+    }
+    .fixed_links_red a:hover > .icon-home-space {
+        color: #DC2726; 
+    }
+    .fixed_links_red a:hover > .icon-live-space {
+        color: #DC2726; 
+    }
+    .fixed_links_red a:hover > .icon-launches-space {
+        color: #DC2726; 
+    }
+    .fixed_links_red a:hover > .icon-mars-space {
+        color: #DC2726; 
+    }
+    .fixed_links_red a:hover > .icon-contact-space {
+        color: #DC2726; 
+    }
+    .fixed_links_red a:active > .icon-home-space {
+        color: #DC2726; 
+    }
+    .fixed_links_red a:active > .icon-live-space {
+        color: #DC2726; 
+    }
+    .fixed_links_red a:active > .icon-launches-space {
+        color: #DC2726; 
+    }
+    .fixed_links_red a:active > .icon-mars-space {
+        color: #DC2726; 
+    }
+    .fixed_links_red a:active > .icon-contact-space {
+        color: #DC2726; 
+    }
+    .fixed_links a:hover > .icon-home-space {
+        color: #2E3192; 
+    }
+    .fixed_links a:hover > .icon-live-space {
+        color: #2E3192; 
+    }
+    .fixed_links a:hover > .icon-launches-space {
+        color: #2E3192; 
+    }
+    .fixed_links a:hover > .icon-mars-space {
+        color: #2E3192; 
+    }
+    .fixed_links a:hover > .icon-contact-space {
+        color: #2E3192; 
+    }
+    .fixed_links a:active > .icon-home-space {
+        color: #2E3192; 
+    }
+    .fixed_links a:active > .icon-live-space {
+        color: #2E3192; 
+    }
+    .fixed_links a:active > .icon-launches-space {
+        color: #2E3192; 
+    }
+    .fixed_links a:active > .icon-mars-space {
+        color: #2E3192; 
+    }
+    .fixed_links a:active > .icon-contact-space {
+        color: #2E3192; 
+    }
+    .fixed_main_nav a {
+        position: relative;
+        height: 60px;
+        width: 100%;
+        margin-right: 0;
+        padding-top: 20px;
+        padding-left: 100px;
+        color: #fff;
+        background: #929292;
+        border-bottom: 1px solid #fff;
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    #logo_fixed {
+        margin-left: -80px;
+    }
+    #logo_fixed_red {
+        margin-left: -80px;
+    }
+    .fixed_main_nav a:last-child {
+        border-bottom: none;
+    }
+    .fixed_main_nav_red a {
+        position: relative;
+        height: 60px;
+        width: 100%;
+        margin-right: 0;
+        padding-top: 20px;
+        color: #fff;
+        background: #929292;
+        border-bottom: 1px solid #fff;
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .fixed_main_nav_red a:last-child {
+        border-bottom: none;
+    }
+    .fixed_main_nav a:hover {
+        color: #2E3192;  
+        border-bottom: 1px solid #fff;
+        text-decoration: underline;
+    }
+    .fixed_main_nav a:last-child:hover {
+        border-bottom: none;
+    }
+    .fixed_main_nav_red a:hover {
+        color: #DC2726;  
+        border-bottom: 1px solid #fff;
+        text-decoration: underline;
+    }
+    .fixed_main_nav_red a:last-child:hover {
+        border-bottom: none;
+    }
+    .fixed_main_nav a:active {
+        color: #2E3192; 
+        background: #eee; 
+        text-decoration: underline;
+    }
+    .fixed_main_nav_red a:active {
+        color: #DC2726;
+        background: #eee;
+        text-decoration: underline;
+    }
+    .fa-bars {
+        color: #DC2726;
+        font-size: 45px;
+    }
+    .fixed_main_nav .fixed_active {
+        color: #2E3192;
+        background: #eee;
+        border-bottom: 1px solid #fff;
+        text-decoration: underline;
+    }
+    .fixed_main_nav .fixed_active_red {
+        color: #DC2726;
+        background: #eee;
+        border-bottom: 1px solid #fff;
+        text-decoration: underline;
+    }
+
+    /* Timeline */
+    .active_year .timeline_year_close {
+        margin: 50px 0;
+    }
+    .timeline_section {
+        height: 800px;
+        left: 0;
+        padding-bottom: 120px;
+        overflow: visible;
+        margin-bottom: 120px;
+    }
+    .timeline {
+        width: 100%;
+        overflow: visible;
+    }
+    .timeline_item {
+        display: none;
+        position: absolute;
+        top: 80px !important;
+        right: 0 !important;
+        left: auto !important;
+        max-width: 100%;
+        margin: 50px 20px 20px 170px;
+    }
+    #active_timeline_item {
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        max-width: 100%;
+        margin: 50px 20px 20px 170px;
+    }
+    .active_timeline p {
+        color: #2E3192;
+        background: #40e0d0;
+    }
+    .timeline_section h1 {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .timeline_line {
+        position: absolute;
+        height: 100%;
+        top: 150px;
+        left: 70px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .timeline_line_scroll {
+        height: 100%;
+        width: 120%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-left: 15px;
+    }
+    .vertical_line {
+        display: none;
+    }
+    .active_year p {
+        margin: 50px 0 40px 0;
+        -o-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        transition: 0.5s;
+    }
+    .inactive_year p {
+        display: none;      
+    }
+    .active_year p:hover {
+       color: #2E3192;
+       background: #40e0d0;
+       cursor: pointer;
+    }
+    .active_year p:active {
+        color: #2E3192;
+        background: #40e0d0;
+    }
+    #topYear {
+        margin-top: -50px;
+    }
+    #bottomYear {
+        margin-bottom: 100px;
+    }
+    .backToTop {
+        display: none;
+    }
+    .timeline_end {
+        margin: 0;
+        background: #929292;
+        top: 1578px;
+        left: 25px;
+        height: 2px;
+        width: 120px;
+    }
+    .hint {
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width : 830px) {
+    .img_right {
+        display: none;
+    }
+    .hamburger_cntnr i {
+        top: 20px;
+        right: 20px;
+    }
+    .hamburger_cntnr_red i {
+        top: 20px;
+        right: 20px;
+        color: #fff;
+    }  
+    .button_container a, .NASA_link a, .fab {
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+
+    /* HOME PAGE */
+    .live_video_flex a {
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .live_video_flex {
+        position: relative;
+        flex-direction: column;
+        margin: 0 50px 100px 50px;
+        z-index: 1;
+    }
+    .nasa_live_cta {
+        margin-right: 0;
+        margin-bottom: 50px;
+        min-height: 150px;
+    }
+    .nasa_science_cta {
+        margin-right: 0;
+        margin-bottom: 50px;
+        min-height: 150px;
+    }
+    .nasa_TV_cta {
+        margin-bottom: 50px;
+        min-height: 150px;
+    }
+    .live_video_section h1 {
+        text-align: center;
+    }
+    .live_video_section h2, .live_video_section p {
+        text-align: center;
+    }
+    .launch_mars_button {
+        padding: 20px 0;
+        text-align: center;
+        width: 70%;
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .mars_flex, .launches_flex {
+        flex-direction: column;   
+    }
+    .mars_flex {
+        margin-bottom: 60px;
+    }
+    .mars_text p:last-child, .launches_text p:last-child {
+        margin-bottom: 25px;
+    }
+    .mars_graphic, .launches_graphic {
+        margin-left: 0;
+    }
+    .top_section {
+        flex-direction: column;
+    }
+    .ISS_section {
+        flex: 1;
+    }
+    .humans_section {
+        flex: 1;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .show_map {
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .live_cta, .science_cta, .TV_cta {
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+
+    /* LIVE PAGE */ 
+    .img_left_live {
+        position: absolute;
+        top: 435px;
+        left: 50px;
+        width: 300px;
+    }
+    .img_btm_left_live {
+        position: absolute;
+        left: 50px;
+        bottom: 130px;
+        width: 300px;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .nasa_tv_img {
+        margin: 0 20px 50px 20px;
+        padding-top: 10px;
+    }
+    .nasa_tv_img img {
+        width: 100%;
+    }
+    .red_button {
+        width: 70%;
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .red_button:hover {
+        background: #40e0d0;
+    }
+    .red_button:active {
+        background: #40e0d0;
+    }
+    #nasa_tv_img:hover + .red_button { 
+        background: #40e0d0; 
+    }
+    #nasa_tv_img:active + .red_button { 
+        background: #40e0d0; 
+    }
+    .episode_selectors a, .send_message, .h1_red a  {
+        -o-transition: none;
+        -moz-transition: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    /* LAUNCHES PAGE */
+    .archived_launches, .active_year p {
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .video_button {
+        max-width: 150px;
+        margin: 0 auto 10px auto;
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .h2_juno {
+        padding: 0 20.2px;
+    }
+    .h2_zarya {
+        padding: 0 13.54px;
+    }
+    .inline_link_red, .inline_link {
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+
+    /* MARS PAGE */
+    /* Weather Report Section */
+    .mars_weather_image {
+        background: none;
+        padding-bottom: 0;
+        min-height: 250px;
+    }
+    .weather_h2 {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        float: none;
+    }
+    .weather_h2 h2 {
+        color: #DC2726; 
+        text-align: center;
+    }
+    .insight_description {
+        background: #414042;
+        max-width: 100%;
+        margin-top: 0;
+        padding: 2px 50px 2px 50px;
+        float: none;
+    }
+    .insight_location {
+        display: none;
+    }
+
+    /* Report */
+    .todays_report {
+        margin-bottom: 40px;
+    }
+    .today1 {
+        text-align: center;
+        width: 33%;
+        margin: 0;
+    }
+    .today2 {
+        text-align: center;
+        width: 28%;
+        margin: 0;
+    }
+    .today2 p {
+        margin-bottom: 8px;
+    }
+    .today3 {
+        text-align: center;
+        width: 33%;
+    }
+    .report {
+        float: left;
+        margin: 0 auto 10px auto;
+        width: 49%;       
+    }
+    .report2, .report4, .report6 {
+        margin-left: 1%;
+    }
+    .report1, .report3, .report5, .report7 {
+        margin-right: 1%;
+    }
+    .compare_btn {
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+
+    /* Footer */
+    .img_btm_left_home {
+        bottom: 190px;
+    }
+    .img_btm_left_live {
+        bottom: 230px;
+    }
+    .img_btm_left_launches {
+        bottom: 190px;
+    }
+    .img_btm_left_contact {
+        bottom: 240px;
+    }
+    .img_btm_left_mars {
+        bottom: 265px;
+    }
+    footer {
+        position: relative;
+        background: #414042;
+        height: 300px;  
+    }
+    .NASA_link {
+        position: absolute;
+        right: 20px;
+        bottom: 100px;
+    }
+    .NASA_link a {
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .NASA_link a:hover {
+        color: #40e0d0;
+    }
+    .NASA_link a:active {
+        color: #40e0d0;
+    }
+    .copyright {
+        color: #fff;
+        font-size: 10px;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        max-width: 830px;
+    }
+    .copyright p {
+        border-top: 1px solid #fff;
+        padding-top: 15px;
+        margin: 0 20px 0 20px;
+    }
+    .social_media {
+        text-align: left;
+        margin: 0 20px 0 20px;
+    }
+    .fab {
+        color: #fff;
+        font-size: 30px;
+        margin: 150px 5px 5px 5px;
+        padding: 15px;
+    }
+    .fab:hover {
+        color: #40e0d0;
+    }
+    .fab:active {
+        color: #40e0d0;
+    }
+}
+
+@media screen and (max-width : 560px) {
+    .logo, .logo_red {
+        float: left;
+        margin: 30px 0 0 20px;
+        padding: 0;
+        font-size: 6vw;
+    }
+    .page_overview {
+        padding-top: 100px;
+    }
+
+    /* HOME PAGE */
+    .img_left_home {
+        left: 0;
+        width: 100%;
+    }
+    .img_btm_left_home {
+        left: 10%;
+        max-width: 80%;
+    }
+    .live_video_flex {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* LIVE PAGE */
+    .img_left_live {
+        left: 20px;
+        width: 300px;
+    }
+    .img_btm_left_live {
+        left: 20px;
+        width: 300px;
+    }
+    .content_bottom {
+        margin-top: 80px;
+    }
+
+    /* LAUNCHES PAGE */
+    .video_selector_container {
+        display: none;
+    }
+    .small_screen {
+        border: 2px solid #eeeeee;
+        margin-bottom: 0;
+    }
+    .small_screen h2 {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        color: #2E3192;
+        background: #eeeeee;
+        padding: 20px 0;
+        margin: 0;
+    }
+    .small_screen p {
+        display: block;
+        padding: 10px 20px;
+    }
+    .video_container {
+        display: block;
+        padding: 0;
+    }
+    .video_description {
+        display: none;
+    }
+    .amos_launch {
+        display: block !important;
+    }
+    .juno_launch {
+        display: block !important;
+    }
+    .zarya_launch {
+        display: block !important;
+    }
+    .video_container iframe {
+        min-height: 100%;
+        position: relative;
+        max-width: 540px;
+        margin-bottom: 40px;
+    }
+    .timeline_image {
+        float: none;
+        width: 100%;
+    }
+    .timeline_image img {
+        width: 100%;
+    }
+    .timeline_text {
+        float: none;
+        width: 100%;
+    }
+    .timeline_selectors {
+        top: 15px;
+        left: 0;
+    }
+    .selector {
+        margin-left: 0;
+        padding: 10px;
+    }
+    .sputnik1_h2, .sputnik2_h2 {
+        margin-top: 50px;
+    }
+    .launch_videos h1 {
+        text-align: center;
+    }
+
+    /* MARS PAGE */
+    .img_left_mars {
+        position: absolute;
+        top: 435px;
+        left: 20px;
+        width: 300px;
+    }
+    .img_btm_left_mars {
+        bottom: 265px;
+        left: 10%;
+        width: 80%;
+    }
+
+    /* Report */
+    .todays_report {
+        display: block;
+        margin-bottom: 0;
+        margin: 0 auto 20px auto;
+    }
+    .today1 {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+    .today2 {
+        text-align: center;
+        width: 100%;
+        float: none;
+        padding: 0;
+        margin: 0 auto 20px auto;
+    }
+    .today2 div {
+        display: block;
+    }
+    .today3 {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+    }
+    .today3 p, .today2 p {
+        margin: 0;
+    }
+
+    /* Slideshow */
+    .image_information_container {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 0 20px 5px 10px;
+    }
+    .image_information_container p {
+        display: inline-block;
+        font-size: 10px;
+        margin: 0;
+    }
+    .btn_container {
+        top: 20px;
+    }
+
+    /* CONTACT */
+    .img_left_contact {
+        top: 525px;
+        left: 5%;
+        width: 90%;
+    }
+    .img_btm_left_contact {
+        left: 5%;
+        width: 90%;
+    }
+    #success {
+        margin: 200px 0;
+    }
+    .button_container a {
+        width: 100%;
+        -o-transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    .button_container .button_browse1 {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .button_container .button_browse2 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    
+    /* Form */
+    #contact_form {
+        margin-bottom: 60%;
+    }
+    .contact_h1 {
+        margin-top: 120px;
+    }
+
+    /* Validation */
+    .errorEMA {
+        text-align: left;
+        top: 85px;
+        left: 20px; 
+    }
+    .errorMES {
+        top: 310px;
+    }
+    .errorNME {
+        top: -18px;
+    }
+    
+    /* Form Elements */
+    .input_name {
+        margin-top: 35px;
+        width: 100%;
+    }
+    .input_email {
+        margin-top: 60px;
+        width: 100%; 
+    }
+    
+    /* Hints */
+    .hint_name {
+        position: absolute;
+        top: 79px;
+        right: 10px; 
+        width: 100%;
+    }
+    .hint_email {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 355px) {
+    .img_left_live {
+        top: 435px;
+        width: 90%;
+    }
+    .img_btm_left_live {
+        bottom: 280px;
+        left: 5%;
+        max-width: 90%;
+    }
+    .img_left_launches {
+        top: 400px;
+        left: 15%;
+        width: 70%;
+    }
+    .img_btm_left_launches {
+        bottom: 220px;
+        left: 15%;
+        width: 70%;
+    }
+    .img_left_mars {
+        position: absolute;
+        top: 450px;
+        left: 15px;
+        width: 90%;
+    }
+    .img_btm_left_mars {
+        bottom: 320px;
+        left: 10%;
+        width: 80%;
+    }
+    .img_btm_left_home {
+        bottom: 240px;
+    }
+    .img_btm_left_contact {
+        bottom: 280px;
+    }
+    .NASA_link {
+        position: absolute;
+        right: 20px;
+        bottom: 60px;
+    }
+    footer {
+        position: relative;
+        background: #414042;
+        height: 350px; 
+    }
+    .fab {
+        color: #fff;
+        font-size: 30px;
+        margin: 150px 5px 55px 5px;
+        padding: 15px;
+    }
+    .social_media {
+        text-align: center;
+        margin: 0 20px 0 20px;
+    }  
+    .form_container {
+        margin-bottom: 200px;
+    }
+}
+
+/* IE 10/11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* Header */
+    .header_background_blue {
+        background: url(../images/bg_blue.jpg) no-repeat;
+        background-size: cover;
+        height: 650px;
+    }
+    .header_background_red {
+        background: url(../images/bg_red.jpg) no-repeat;
+        background-size: cover;
+        height: 650px;
+    }
+    .fixed_main_nav {
+       background: #eee;
+    }
+    .fixed_main_nav a:nth-child(4) {
+        border-bottom: 2px solid #fff;
+    }
+
+    /* HOME PAGE */
+    .content_top {
+        max-width: 800px;
+    }
+    .top_section {
+        display: block;
+        margin: 0 20px;
+    }
+    .ISS_section {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .humans_section {
+        margin-left: 0;
+    }
+    
+    /* Mars/Launch Section */
+    .mars_launches_section {
+        max-width: 800px;
+    }
+    .mars_flex, .launches_flex {
+        display: block;
+        margin: 0;
+    }
+    .mars_text, .launches_text {
+       margin: 0 20px;
+    }
+    .launches_text {
+        margin-top: 50px;
+    }
+    .launches_graphic, .mars_graphic {
+        margin: 0 20px;
+    }
+    
+    /* Live Video Section */
+    .content_live_video_section {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .live_video_section {
+        margin: 0 20px 100px 20px;
+    }
+    .live_video_flex {
+        display: block;
+        margin: 50px auto 50px auto;
+    }
+    .live_video_flex h2 {
+        color: #2E3192;
+        margin-top: 0; 
+    }
+    .live_video_flex p {
+        display: inline-block;
+        padding-bottom: 50px;
+        margin: 0 auto 0 auto;
+    }
+    .live_video_card_link {
+        color: #414042;
+    }
+    .nasa_live_cta {
+        display: block;
+        width: 80%;
+        min-height: 220px;
+        margin: 0 auto 50px auto;
+        z-index: 1;
+    }
+    .nasa_science_cta {
+        display: block;
+        width: 80%;
+        min-height: 220px;
+        margin: 0 auto 50px auto;
+        z-index: 1;
+    }
+    .nasa_TV_cta {
+        display: block;
+        width: 80%;
+        min-height: 220px;
+        margin: 0 auto 50px auto;
+        z-index: 1;
+    }
+
+    /* LAUNCHES PAGE */
+    .launch_schedule {
+        scrollbar-face-color: #40e0d0;
+        scrollbar-highlight-color: none;
+        scrollbar-3dlight-color: none;
+        scrollbar-darkshadow-color: none;
+        scrollbar-shadow-color: #40e0d0;
+        scrollbar-arrow-color: #40e0d0;
+        scrollbar-track-color: #000;
+    }
+    .timeline_end {
+        display: none;
+    }
+
+    /* LIVE PAGE */
+    .flex {
+        display: block; 
+        max-width: 600px;  
+    }
+    .nasa_tv {    
+        text-align: left;
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+    .nasa_tv_img {
+        padding-top: 10px;
+        margin: 0 20px;    
+    }
+    .episode_selectors {
+        display: block;
+        margin: 0 -1px 20px 0;
+        overflow: auto;
+    }
+    .episode_selectors a {
+        display: inline-block;
+        min-width: 103.2px;
+        padding: 20px 5px;
+        margin-top: 4px;
+    }
+}

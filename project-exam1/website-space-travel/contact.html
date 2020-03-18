@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Space Travel - Explore travel into space">
+	<meta name="keywords" content="space,travel,explore space,space activity,contact form,bugs,issues,feedback">
+	<meta name="author" content="Lisa Ingemann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="font_styles.css">
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <title>Space Travel | Contact</title>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="fixed_main_nav">
+        <h1 id="logo_fixed"><a href="index.html">SPACE TRAVEL</a></h1>
+
+<!-- Fixed Main Nav -->
+        <nav class="fixed_links">
+            <a href="index.html"><i class="icon-home-space"></i>Home</a>
+            <a href="live.html"><i class="icon-live-space"></i>Live</a>
+            <a href="launches.html"><i class="icon-launches-space"></i>Launches</a>
+            <a href="mars.html"><i class="icon-mars-space"></i>Mars</a>
+            <a class="fixed_active" href="contact.html"><i class="active_icon icon-contact-space"></i>Contact</a>
+        </nav>
+        <div>
+            <i id="fixedHamburgerMenu" class="fas fa-bars" onclick="toggleFixedMenu()"></i>
+        </div>
+    </div>
+
+<!-- Header Background -->
+    <div class="header_background_blue">
+        <h1 class="logo"><a href="index.html">SPACE TRAVEL</a></h1>
+        <img src="images/spaceShuttle.svg" class="img_right" alt="White outline of a space shuttle.">
+
+<!-- Main Nav -->
+        <nav>
+            <ul class="main_nav">
+                <li><a href="index.html"><i class="icon-home-space"></i>Home</a></li>
+                <li><a href="live.html"><i class="icon-live-space"></i>Live</a></li>
+                <li><a href="launches.html"><i class="icon-launches-space"></i>Launches</a></li>
+                <li><a href="mars.html"><i class="icon-mars-space"></i>Mars</a></li>
+                <li><a class="active" href="contact.html"><i class="active_icon icon-contact-space"></i>Contact</a></li>
+            </ul>
+            <div class="hamburger_cntnr">
+                <i id="hamburgerMenu" class="fas fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+<!-- Page Description -->
+        <div class="page_overview">
+            <h1 class="page_heading">Contact</h1>
+            <p class="page_description">Contact us about bugs and issues or give feedback and suggestions about the website.</p>
+        </div>
+        <img src="images/img_top_contact.svg" class="img_left_contact" alt="Image of the top of an envelope icon">
+    </div>
+</header>
+
+
+<!-- MAIN -->
+<main>
+    <div class="breadcrumbs">
+        <p><a href="index.html">Home</a> | Contact</p>
+    </div>
+    <section class= "content">
+        <h1 id="contact_anchor" class="contact_h1">Contact Form</h1>
+        
+<!-- Form -->
+        <form id="contact_form" action="success.html#success_anchor" method="GET">
+            <div class="form_container">
+                <div class="form_elements">
+                    <div class="form_error_messages">
+                        <p class="errorNME">Please type in your name:<br> (Teri Gore)</p>
+                        <p class="errorEMA">Please enter a valid email:<br>(name@example.com)</p> 
+                        <p class="errorMES">Form requires a message</p>
+                    </div>
+
+                    <div class="input_fields">
+                        <input class="input_name" type="text" name="name" placeholder="Name*" onblur="validateNAMEInput()">                        
+                        <input class="input_email" type="text" name="email" placeholder="Email*" onblur="validateEMAILInput()"> 
+                        <p class="hint_name">(Name is required)</p>
+                        <p class="hint_email">(Email is required)</p>
+
+                        <input class="input_topic" type="text" name="topic" placeholder="Topic"> 
+                        <p class="hint_topic">(Topic is not required)</p>
+
+                        <textarea class="input_message" name="message" maxlength="250" placeholder="Message*" onblur="validateMESSInput()"></textarea>  
+                        <p class="hint_message">(Max 250 characters)</p>
+                    </div>  
+                </div>
+
+<!-- Send -->
+                <input id="sendForm" class="send_message" type="submit" name="send" value="Send">                          
+            </div>
+        </form>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="images/img_btm_contact.svg" class="img_btm_left_contact" alt="Image of the bottom of an envelope icon.">
+
+<!-- Social Media -->
+    <div class="social_media">
+        <a href="https://www.facebook.com/NASA/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/nasa"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/nasa/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+<!-- NASA Link -->
+    <div class="NASA_link"> 
+        <a href="https://www.nasa.gov">NASA</a>
+    </div>
+    
+<!-- Copyright -->
+    <div class="copyright">
+        <p>Copyright © 2019 Space Travel</p>
+    </div>
+</footer>
+
+<script src="scripts/script_contact.js"> </script>
+</body>
+</html>

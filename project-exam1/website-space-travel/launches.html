@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Space Travel - Explore travel into space">
+	<meta name="keywords" content="space,travel,explore space,space activity,historical launches,upcoming launches,archived launches,launch videos,amos-17,juno,zarya">
+	<meta name="author" content="Lisa Ingemann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="font_styles.css">
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <title>Space Travel | Launches</title>
+    <script src="scripts/script_launches.js"> </script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="fixed_main_nav">
+        <h1 id="logo_fixed"><a href="index.html">SPACE TRAVEL</a></h1>
+
+<!-- Fixed Main Nav -->
+        <nav class="fixed_links">
+            <a href="index.html"><i class="icon-home-space"></i>Home</a>
+            <a href="live.html"><i class="icon-live-space"></i>Live</a> 
+            <a class="fixed_active" href="launches.html"><i class="active_icon icon-launches-space"></i>Launches</a>
+            <a href="mars.html"><i class="icon-mars-space"></i>Mars</a>
+            <a href="contact.html"><i class="icon-contact-space"></i>Contact</a>
+        </nav>
+        <div>
+            <i id="fixedHamburgerMenu" class="fas fa-bars" onclick="toggleFixedMenu()"></i>
+        </div>
+    </div>
+
+<!-- Header Background -->
+    <div class="header_background_blue">
+        <h1 class="logo"><a href="index.html">SPACE TRAVEL</a></h1>
+        <img src="images/spaceShuttle.svg" class="img_right" alt="White outline of a space shuttle.">
+
+<!-- Main Nav -->
+        <nav>
+            <ul class="main_nav">
+                <li><a href="index.html"><i class="icon-home-space"></i>Home</a></li>
+                <li><a href="live.html"><i class="icon-live-space"></i>Live</a></li>
+                <li><a class="active" href="launches.html"><i class="active_icon icon-launches-space"></i>Launches</a></li>
+                <li><a href="mars.html"><i class="icon-mars-space"></i>Mars</a></li>
+                <li><a href="contact.html"><i class="icon-contact-space"></i>Contact</a></li>
+            </ul>
+            <div class="hamburger_cntnr">
+                <i id="hamburgerMenu" class="fas fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+<!-- Page Overview -->
+        <div class="page_overview">
+            <h1 class="page_heading">Launches</h1>
+            <p class="page_description">See timeline for historic launches and a schedule for upcoming 
+                launches as well as videos of select launches.</p>
+        </div>
+
+        <img src="images/img_top_launches.svg" class="img_left_launches" alt="White outline of the top of a spaceshuttle attatched to rockets.">
+    </div>
+</header>
+
+
+<!-- MAIN -->
+<main>
+    <div class="breadcrumbs">
+        <p><a href="index.html">Home</a> | Launches</p>
+    </div>
+
+<!-- TIMELINE -->
+    <section>     
+        <div class="timeline_end">
+            <span></span>
+        </div>
+        <div class="backToTop">
+            <a href="launches.html#timelineTop"><p>Timeline Top</p><i class="icon-totop-space"></i></a>
+        </div>
+
+<!-- Historic Timeline -->
+        <div class="timeline_section">
+            <div class="timeline">
+                <h1 id="timelineTop">Historical Launches Timeline</h1>
+                <div class="hint">
+                    <p>Scroll to see more of the timeline</p>
+                </div>
+                <div id="active_timeline_item" class="timeline_item top_timeline_item">
+                    <h2>First Photo</h2>
+
+                    <div class="line_divider"></div>
+
+                    <div class="timeline_text">
+                        <p><b>October 24.</b><br> The first photo of earth was taken from space by a German v2 rocket with a camera created by Clyde Holliday.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1946_first_photo_from_space.jpg" alt="black and white image of earth from space.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Launch at Cape Canaveral</h2>
+
+                    <div class="line_divider"></div>
+
+                    <div class="timeline_text">
+                        <p><b>July 24.</b><br> Bumper 8 had the first launch at Cape Canaveral part of a region called Space Coast and it is the site of the Cape Canaveral Air Force Station.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1950_cape_canaveral.jpg" alt="">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2 class="sputnik1_h2">Artificial Earth Satellite</h2>
+                    <h2 class="sputnik2_h2">First Animal In Space</h2>
+    
+                    <div class="timeline_selectors">
+                        <div class="selector selector1" onclick="showItem1()"></div>
+                        <div class="selector selector2" onclick="showItem2()"></div>
+                    </div>
+
+                    <div class="line_divider"></div>
+                        
+                    <div class="timeline_text">
+                        <p class="sputnik1_text"><b>October 4.</b><br> Sputnik-1 was the world’s first artificial Earth satellite and it was launched by The Soviet Union.</p>
+                        <p class="sputnik2_text"><b>November 3.</b><br> Laika the dog became the first animal to orbit earth. She sat inside Sputnik-2.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img class="sputnik1_img" src="images/timeline/1957_Sputnik-1.jpg" alt="Image of Sputnik-1 an artifical Earth satellite">
+                        <img class="sputnik2_img" src="images/timeline/1957_Sputnik-2.jpg" alt="Image of Sputnik-2, Laika the dog's ride to orbit around the earth.">
+                    </div>                
+                </div>
+                <div class="timeline_item">
+                    <h2>First Human In Space</h2>
+    
+                    <div class="line_divider"></div>
+    
+                    <div class="timeline_text">
+                        <p><b>April 12.</b><br> Vostok 1 was the first spacecraft launched with a human aboard. The soviet astronaut Yuri Gagarin became the first human in space.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1961_Vostok1.jpg" alt="Image of Vostok 1.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Successful Planetary Encounter</h2>
+        
+                    <div class="line_divider"></div>
+        
+                    <div class="timeline_text">
+                        <p><b>August 27.</b><br> The Mariner 2, a space probe sent to Venus, was the first robotic space probe to have a successful planetary encounter. It measured the temperature distribution on the surface of Venus and basic measurements of its atmosphere.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1963_Mariner2.jpg" alt="Image of the robotik space probe Mariner 2.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Woman In Space</h2>
+            
+                    <div class="line_divider"></div>
+            
+                    <div class="timeline_text">
+                        <p><b>June 16-19.</b><br> Vostok 6 was a spacecraft launched with astronaut Valentina Tereshkova aboard that became the first woman in space.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1963_Vostok6.jpg" alt="Image of the spacecraft Vostok 6.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Spacewalk</h2>
+                
+                    <div class="line_divider"></div>
+                
+                    <div class="timeline_text">
+                        <p><b>March 18-19.</b><br> Voskhod 2 was a soviet crewed space mission where Alexei Leonov, one of the 2 crewmembers aboard, conducted the first spacewalk for 12 minutes in a specialized spacesuit.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1965_Voskhod2.png" alt="Image of the spacecraft Voskhod 2.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Humans to Leave Earths Orbit</h2>
+                    
+                    <div class="line_divider"></div>
+                    
+                    <div class="timeline_text">
+                        <p><b>December 21-27.</b><br> Apollo 8 was the first crewed spacecraft to leave Earth’s orbit, orbit the moon and return. The 3 crew members were the first humans to witness and photograph an Earthrise.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1968_apollo8.jpg" alt="Image of the first Earthrise.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Moonlanding</h2>
+                        
+                    <div class="line_divider"></div>
+                        
+                    <div class="timeline_text">
+                        <p><b>July 16-24.</b><br> Apollo 11 was the first spacecraft that landed humans on the moon. They landed on July 20 and Neil Armstrong became the first human to step onto the moon’s surface July 21. They brought lunar samples back to Earth.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1969_apollo11.jpg" alt="Image of an astronaut on the moon.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>Failed Moonlanding</h2>
+                            
+                    <div class="line_divider"></div>
+                            
+                    <div class="timeline_text">
+                        <p><b>April 11-17.</b><br> Apollo 13 was the third crewed mission to land on the moon, but the lunar landing was aborted after an oxygen tank exploded. The crew looped around the moon and returned safely to earth.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1970_apollo13.jpg" alt="Image of the damage to Apollo 13's oxygen tank.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Contact With Jupiter</h2>
+                                
+                    <div class="line_divider"></div>
+                                
+                    <div class="timeline_text">
+                        <p><b>March 2.</b><br> Pioneer 10 is a space probe that was the first spacecraft to reach Jupiter.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1972_Pioneer10.jpg" alt="Image of Pioneer 10 near Jupiter.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>Joint Mission Between US and USSR</h2>
+                                    
+                    <div class="line_divider"></div>
+                                    
+                    <div class="timeline_text">
+                        <p><b>July 17-19.</b><br> Apollo-Soyuz was the first joint mission between the US and USSR which involved the docking of an Apollo command and service module and the Soviet Soyuz 19 capsule.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1975_apollo-soyuz.jpg" alt="Image of Apollo-Soyuz in space above Earth.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Successfull Landing Mission on Mars</h2>
+                                        
+                    <div class="line_divider"></div>
+                                        
+                    <div class="timeline_text">
+                        <p><b>July 20.</b><br> Viking 1 was the second spacecraft to soft-land on Mars and the first to successfully preform its landing mission. The first spacecraft to soft-land was the Soviet Union’s Mars 3, but it stopped transmitting after 14,5 seconds.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1976_Viking1.jpg" alt="Image of the Viking 1 spacecraft.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Reusable Space vehicle</h2>
+                                            
+                    <div class="line_divider"></div>
+                                            
+                    <div class="timeline_text">
+                        <p><b>April 12-14.</b><br> The space shuttle Columbia was the first reusable space vehicle.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1981_STS1.jpg" alt="Image of space shuttle Comlumbia launching.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Untethered Spacewalk</h2>
+                                                
+                    <div class="line_divider"></div>
+                                                
+                    <div class="timeline_text">
+                        <p><b>February 3-11.</b><br> The space shuttle Challenger's fourth flight included the first untethered spacewalk.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1984_STS-41B.jpg" alt="Image of astronaut floating is space.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>Challenger Disaster</h2>
+                                                    
+                    <div class="line_divider"></div>
+                                                    
+                    <div class="timeline_text">
+                        <p><b>January 28.</b><br> The space shuttle Challenger broke apart 73 seconds into its 10th mission killing all 7 crew members. It was the first orbiter destroyed in flight.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1986_STS-51-L.jpg" alt="Image of the crew onboard Challenger in 1986.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>Hubble Space Telescope</h2>
+                                                        
+                    <div class="line_divider"></div>
+                                                        
+                    <div class="timeline_text">
+                        <p><b>April 24-29.</b><br> The 35th mission of the American Space Shuttle Program used the space shuttle Discovery to launch the Hubble Space Telescope into Earth’s orbit.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1990_Hubble.jpg" alt="Image of Hubble being released into space.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Spacestation With Rover on Mars</h2>
+                                                            
+                    <div class="line_divider"></div>
+                                                            
+                    <div class="timeline_text">
+                        <p><b>December 4.</b><br> The Mars Pathfinder is an American robotic spacecraft that was the first to land a base station with a rover on Mars.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1996_Mars-pathfinder.jpg" alt="Image of the robotic spacecraft Mars Pathfinder.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>Zarya, First Piece of the ISS</h2>
+                                                                
+                    <div class="line_divider"></div>
+                                                                
+                    <div class="timeline_text">
+                        <p><b>November 20.</b><br> First piece of the International Space Station, Zarya, was launched aboard a Russian proton rocket.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/1998_Zarya.jpg" alt="Image of Zarya, the first piece of the International Space Station.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>Colombia Disaster</h2>
+                                                                    
+                    <div class="line_divider"></div>
+                                                                    
+                    <div class="timeline_text">
+                        <p><b>February 1.</b><br> Space Shuttle Columbia disintegrated during re-entry on the end of its 28th mission since its first mission in 1981 which resulted in the death of all 7 crew members.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/2003_colombia.jpg" alt="Image of Colombias crew onboard in 2003.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Exploration of Pluto</h2>
+                                                                        
+                    <div class="line_divider"></div>
+                                                                        
+                    <div class="timeline_text">
+                        <p><b>January 19.</b><br> New Horizons was launched in 2006 and was the first spacecraft to explore Pluto which it achieved on July 14, 2015.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/2006_new-horizons.jpg" alt="Representation image of the spacecraft New Horizons in space near Pluto.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>Investigating Jupiter</h2>
+                                                                            
+                    <div class="line_divider"></div>
+                                                                            
+                    <div class="timeline_text">
+                        <p><b>August 5.</b><br> Juno is a NASA space probe orbiting the planet Jupiter. It does a scientific investigation of the planet including measuring the planet's composition, gravity field, magnetic field and polar magnetosphere.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/2011_Juno.jpg" alt="Image of the spacecraft Juno near Jupiter.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>Indias First Interplanetary Mission</h2>
+                                                                                
+                    <div class="line_divider"></div>
+                                                                                
+                    <div class="timeline_text">
+                        <p><b>November 5.</b><br> The Mars Orbiter Mission was India’s first interplanetary mission and is a space probe orbiting Mars and the least expensive Mars mission.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/2013_Mangalyaan.jpg" alt="Image of the spacecraft Mangalyaan in space near Mars.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Successful Vertical Landing</h2>
+                                                                                    
+                    <div class="line_divider"></div>
+                                                                                    
+                    <div class="timeline_text">
+                        <p><b>Nov 23.</b><br> New Shepard was the first suborbital booster rocket to make a successful vertical landing.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/2013_blueorigin_newshepard.jpg" alt="Image of the spacecraft Blue Origin New Shepard.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Successful Rocket Landing on a Drone Ship</h2>
+                                                                                            
+                    <div class="line_divider"></div>
+                                                                                            
+                    <div class="timeline_text">
+                        <p><b>April 8.</b><br> A SpaceX Falcon 9 carried a dragon cargo capsule to the International Space Station and returned to perform the first successful rocket landing on a drone ship. This was the fifth attempt of recovering a spent Falcon 9 rocket with the four other failing because of a too fast landing or tipping over after touchdown.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/2015_falcon9_droneship.jpg" alt="Image of a drone ship at sea with a SpaceX Falcon 9 on it.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>First Successful Simultaneous Reusable Rocket Landing</h2>
+                                                                                                
+                    <div class="line_divider"></div>
+                                                                                                
+                    <div class="timeline_text">
+                        <p><b>February 6.</b><br> SpaceX Falcon Heavy’s maiden flight releasing an electric tesla sports car into space that will reach beyond the orbit of Mars. The falcon achieved the first simultaneous reusable rocket landing, but the center core stage was lost during a landing attempt at sea.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/2018_falconheavy.jpg" alt="Image of two SpaceX Falcon Heavy doing simultaneous reusable rocket landing.">
+                    </div>
+                </div>
+                <div class="timeline_item">
+                    <h2>Test Flight of Crew Dragon</h2>
+                                                                                                    
+                    <div class="line_divider"></div>
+                                                                                                    
+                    <div class="timeline_text">
+                        <p><b>March 2.</b><br> A SpaceX Falcon 9 rocket launched a Crew Dragon spacecraft on an uncrewed test flight to the International Space Station. They are the first to work towards the goal of carrying astronauts to and from the International Space Station.</p>
+                    </div>
+                    <div class="timeline_image">
+                        <img src="images/timeline/2019_crew-draohgno.jpg" alt="Image of a Crew Dragon spacecraft.">
+                    </div>
+                </div>
+
+<!-- Timeline Line  -->
+                <div class="timeline_line">
+                    <div class="timeline_line_scroll">
+                        <div class="vertical_line"></div>
+                        <div id="topYear" class="timeline_year active_year active_timeline">
+                            <p>1946</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1947</p>
+                            <p>1948</p>
+                            <p>1949</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1950</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1951</p>
+                            <p>1952</p>
+                            <p>1953</p>
+                            <p>1954</p>
+                            <p>1955</p>
+                            <p>1956</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1957</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1958</p>
+                            <p>1959</p>
+                            <p>1960</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">1961</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">1962</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">1963</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1964</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1965</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1966</p>
+                            <p>1967</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">1968</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">1969</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">1970</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1971</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1972</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1973</p>
+                            <p>1974</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">1975</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">1976</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1977</p>
+                            <p>1978</p>
+                            <p>1979</p>
+                            <p>1980</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1981</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1982</p>
+                            <p>1983</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1984</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1985</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1986</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1987</p>
+                            <p>1988</p>
+                            <p>1989</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1990</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1991</p>
+                            <p>1992</p>
+                            <p>1993</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1996</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1997</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>1998</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>1999</p>
+                            <p>2000</p>
+                            <p>2001</p>
+                            <p>2002</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>2003</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>2004</p>
+                            <p>2005</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>2006</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>2007</p>
+                            <p>2008</p>
+                            <p>2009</p>
+                            <p>2010</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>2011</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>2012</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p>2013</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>2014</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">2015</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">2016</p>
+                        </div>
+                        <div class="timeline_year inactive_year">
+                            <p>2017</p>
+                        </div>
+                        <div class="timeline_year active_year">
+                            <p class="timeline_year_close">2018</p>
+                        </div>
+                        <div id="bottomYear" class="timeline_year active_year">
+                            <p class="timeline_year_close">2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Upcoming Launches -->
+    <section class="section_black">
+        <div class="launch_section">
+            <h1>Upcoming Launches</h1>
+            <p class="offwhite_text">TBD: to be determined<br> NET: no earlier than</p>
+
+            <div class="scroll_content_links">
+                <a href="#scroll_top">Top</a>
+                <a href="#scroll_bottom">Bottom</a>
+            </div>
+
+            <div class="launch_schedule">
+
+                <div aria-hidden="true" id="scroll_top"></div>
+
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Oct. 14/15 | <span class="launch_sub_title">Electron • “As The Crow Flies”</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Window:</b> 2300-0300 GMT on 14th/15th (7:00-11:00 p.m. EDT on 14th)<br>
+                        <b>Launch Site:</b>  Launch Complex 1, Mahia Peninsula, New Zealand</p>
+                        <p>A Rocket Lab Electron rocket will launch on its ninth flight from a facility on the Mahia Peninsula on New 
+                            Zealand’s North Island. The Electron rocket and its Curie upper stage will place the Palisade CubeSat into 
+                            orbit for Astro Digital on a technology demonstration mission. Palisade is a 16U CubeSat with an on-board 
+                            propulsion system and a next-generation communications system. The mission is nicknamed “As The Crow Flies.”</p>
+                    </div>
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>TBD | <span class="launch_sub_title">LauncherOne • Inaugural Flight</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Window:</b> TBD<br>
+                        <b>Launch Site:</b> Cosmic Girl (Boeing 747), Mojave Air and Space Port, California</p>
+                        <p>A Virgin Orbit LauncherOne rocket will make its first orbital test flight after dropping from a modified Boeing 
+                            747 carrier aircraft over the Pacific Ocean off the coast of California.</p>
+                    </div>
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>October | <span class="launch_sub_title">PSLV • Cartosat 3</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Satish Dhawan Space Center, Sriharikota, India</p>
+                        <p>India’s Polar Satellite Launch Vehicle (PSLV), designated PSLV-C47, will launch the first 
+                            Cartosat 3-series Earth-imaging and mapping satellite for the Indian Space Research 
+                            Organization. Delayed from mid-2019.</p>
+                    </div>
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Late 2019 | <span class="launch_sub_title">Long March 4B • CBERS 4A</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Taiyuan, China</p>
+                        <p>A Chinese Long March 4B rocket will launch the CBERS 4A remote sensing satellite. 
+                            CBERS 4A is the fifth China-Brazil Earth Resources Satellite for the collection of 
+                            global imagery for environmental, urban planning and agricultural applications.</p>
+                    </div>                    
+                </div>  
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>TBD | <span class="launch_sub_title">Falcon 9 • Starlink 1</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> SLC-40, Cape Canaveral Air Force Station, Florida</p>
+                        <p>A SpaceX Falcon 9 rocket is expected to launch the second batch of approximately 60 
+                            satellites for SpaceX’s Starlink broadband network, a mission designated Starlink 1. Delayed from Oct. 17.</p>
+                    </div>
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Nov. 2 | <span class="launch_sub_title">Antares • NG-12</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> 1359 GMT (9:59 a.m. EDT)<br>
+                        <b>Launch Site:</b> Pad 0A, Wallops Island, Virginia</p>
+                        <p>A Northrop Grumman Antares rocket will launch the 13th Cygnus cargo freighter on the 12th operational 
+                            cargo delivery flight to the International Space Station. The mission is known as NG-12. The rocket 
+                            will fly in the Antares 230 configuration, with two RD-181 first stage engines and a Castor 30XL second 
+                            stage. Delayed from Oct. 1 and Oct. 21</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>November | <span class="launch_sub_title">LauncherOne • ELaNa-20</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Window:</b> TBD<br>
+                        <b>Launch Site:</b> Cosmic Girl (Boeing 747), Mojave Air and Space Port, California</p>
+                        <p>A Virgin Orbit LauncherOne rocket will launch on its second flight after dropping from a 
+                            modified Boeing 747 carrier jet. The flight will be conducted under contract to NASA’s 
+                            Venture Class Launch Services Program, carrying 14 CubeSats to orbit for NASA field centers, 
+                            U.S. educational institutions and laboratories on the ELaNa-20 rideshare mission. Delayed 
+                            from Aug. 1 and Sept. 1.</p>
+                    </div>                    
+                </div>  
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>November | <span class="launch_sub_title">PSLV • RISAT 2BR1</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Satish Dhawan Space Center, Sriharikota, India</p>
+                        <p>India’s Polar Satellite Launch Vehicle (PSLV) will launch the RISAT 2BR1 radar Earth 
+                            observation satellite for the Indian Space Research Organization. The mission will 
+                            likely use the “Core Alone” version of the PSLV with no strap-on solid rocket boosters. Delayed from October.</p>
+                    </div>                    
+                </div> 
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>TBD | <span class="launch_sub_title">Falcon 9 • Starlink 2</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> SLC-40, Cape Canaveral Air Force Station, Florida</p>
+                    <p>A SpaceX Falcon 9 rocket is expected to launch the third batch of approximately 60 satellites 
+                        for SpaceX’s Starlink broadband network, a mission designated Starlink 2.</p>
+                    </div>                    
+                </div>  
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>NET Nov. 11 | <span class="launch_sub_title">Falcon 9 • JCSAT 18/Kacific 1</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Window:</b> TBD<br>
+                        <b>Launch Site:</b> SLC-40, Cape Canaveral Air Force Station, Florida</p>
+                    <p>A SpaceX Falcon 9 rocket will launch the JCSAT 18/Kacific 1 communications satellite jointly owned 
+                        by SKY Perfect JSAT Corp. of Japan and Kacific Broadband Satellites of Singapore. Built by Boeing, 
+                        the JCSAT 18/Kacific 1 communications satellite will provide mobile and broadband services across 
+                        the Asia-Pacific region.</p>
+                    </div>                    
+                </div>  
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Nov. 16 | <span class="launch_sub_title">Soyuz • Glonass M</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Plesetsk Cosmodrome, Russia</p>
+                    <p>A Russian government Soyuz rocket will launch a Glonass M navigation satellite. The rocket will in the Soyuz-2.1b 
+                        configuration with a Fregat upper stage. </p>
+                    </div>                    
+                </div>  
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Nov. 22 | <span class="launch_sub_title">Ariane 5 • Inmarsat 5 F5 & TBD</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Window:</b> TBD<br>
+                        <b>Launch Site:</b>  ELA-3, Kourou, French Guiana</p>
+                    <p>Arianespace will use an Ariane 5 ECA rocket, designated VA250, to launch the Inmarsat 5 F5 
+                        communications satellite and a co-passenger to be confirmed. Built by Thales Alenia Space, 
+                        the Inmarsat 5 F5 satellite is owned by Inmarsat of London. Inmarsat 5 F5 will be the fourth 
+                        satellite in Inmarsat’s Global Xpress network. Arianespace is expected to select and announce 
+                        a co-passenger for this mission.</p>
+                    </div>                    
+                </div>   
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>NET November | <span class="launch_sub_title">Falcon 9 • Starlink 3</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> SLC-40, Cape Canaveral Air Force Station, Florida</p>
+                    <p>A SpaceX Falcon 9 rocket is expected to launch the fourth batch of approximately 60 satellites 
+                        for SpaceX’s Starlink broadband network, a mission designated Starlink 3.</p>
+                    </div>                    
+                </div> 
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Nov. 29 | <span class="launch_sub_title">Rockot • Gonets M</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Plesetsk Cosmodrome, Russia</p>
+                    <p>A Russian government Rockot vehicle with a Breeze KM upper stage will launch three Gonets M 
+                        communications satellites. Delayed from June.</p>
+                    </div>                    
+                </div> 
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>December | <span class="launch_sub_title">SSLV • Demonstration Launch</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Satish Dhawan Space Center, Sriharikota, India</p>
+                    <p>India’s Small Satellite Launch Vehicle (SSLV) will launch on its first orbital test flight. 
+                        Consisting of three solid-fueled stages and a liquid-fueled upper stage, the SSLV is a new 
+                        Indian launch vehicle designed to carry small satellites into low Earth orbit. Delayed from 
+                        September.</p>
+                    </div>                    
+                </div> 
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Dec. 4 | <span class="launch_sub_title">Falcon 9 • SpaceX CRS 19</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Window:</b> TBD<br>
+                        <b>Launch Site:</b> Cape Canaveral, Florida</p>
+                    <p>A SpaceX Falcon 9 rocket will launch the 21st Dragon spacecraft mission on its 19th operational 
+                        cargo delivery flight to the International Space Station. The flight is being conducted under 
+                        the Commercial Resupply Services contract with NASA. Delayed from Oct. 15.</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Dec. 6 | <span class="launch_sub_title">Soyuz • Progress 74P</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Baikonur Cosmodrome, Kazakhstan</p>
+                    <p>A Russian government Soyuz rocket will launch the 74th Progress cargo delivery ship to the 
+                        International Space Station.</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>NET December | <span class="launch_sub_title">Falcon 9 • Starlink 4</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> SLC-40, Cape Canaveral Air Force Station, Florida</p>
+                    <p>A SpaceX Falcon 9 rocket is expected to launch the fifth batch of approximately 60 satellites for 
+                        SpaceX’s Starlink broadband network, a mission designated Starlink 4.</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>TBD | <span class="launch_sub_title">Long March 5 • Shijian 20</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Wenchang, China</p>
+                    <p>A Chinese Long March 5 rocket will launch the Shijian 20 communications satellite. Shijian 20 is 
+                        the first spacecraft based on the new DFH-5 communications satellite platform, a heavier, 
+                        higher-power next-generation design, replacing the Shijian 18 satellite lost on a launch failure 
+                        in 2017. Delayed from November 2018. Delayed from January and July. </p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Dec. 17 | <span class="launch_sub_title">Soyuz • CSG 1 & CHEOPS</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> 0854:20 GMT (3:54:20 a.m. EST)<br>
+                        <b>Launch Site:</b> ELS, Sinnamary, French Guiana</p>
+                    <p>An Arianespace Soyuz rocket, designated VS23, will launch on a mission from the Guiana Space 
+                        Center in South America. The Soyuz will carry the first COSMO-SkyMed Second Generation, or 
+                        CSG 1, radar surveillance satellite for ASI, the Italian space agency. The European Space 
+                        Agency’s Characterizing Exoplanet Satellite, or CHEOPS, will fly as a secondary payload on 
+                        the mission. Built by Airbus Defense and Space in Spain with a Swiss-developed science instrument, 
+                        CHEOPS will observe transits of planets around other stars to measure their radii. The Soyuz 2-1b 
+                        (Soyuz ST-B) rocket will use a Fregat upper stage. Delayed from Oct. 15 and November.</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Dec. 17 | <span class="launch_sub_title">Atlas 5 • CST-100 Starliner Orbital Flight Test</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> Approx. 1245 GMT (7:45 a.m. EST)<br>
+                        <b>Launch Site:</b> SLC-40, Cape Canaveral Air Force Station, Florida</p>
+                    <p>A United Launch Alliance Atlas 5 rocket, designated AV-080, will launch Boeing’s first CST-100 
+                        Starliner spacecraft on an unpiloted Orbital Test Flight to the International Space Station. 
+                        The capsule will dock with the space station, then return to Earth to landing in the Western 
+                        United States after an orbital shakedown cruise ahead of a two-person Crew Test Flight. The 
+                        rocket will fly in a vehicle configuration with two solid rocket boosters and a dual-engine 
+                        Centaur upper stage. Delayed from Aug. 27, 2018. Delayed from January, April, Aug. 17 and 
+                        September. </p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Dec. 19 | <span class="launch_sub_title">Soyuz • OneWeb 2</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Baikonur Cosmodrome, Kazakhstan</p>
+                        <p>A Russian Soyuz rocket will launch approximately 32 satellites into orbit for OneWeb, which is 
+                            developing a constellation of hundreds of satellites in low Earth orbit for low-latency broadband 
+                            communications. The Soyuz-2.1b rocket will use a Fregat upper stage. Delayed from Nov. 20.</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Dec. 24 | <span class="launch_sub_title">Proton • Elektro-L 3</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Baikonur Cosmodrome, Kazakhstan</p>
+                        <p>A Russian government Proton rocket and Block DM upper stage will launch the Elektro-L 3 
+                            geostationary weather satellite. Delayed from Nov. 20.</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>December | <span class="launch_sub_title">Angara-A5 • Test Flight</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Plesetsk Cosmodrome, Russia</p>
+                    <p>A Russian government Angara-A5 rocket will launch on its second orbital test flight.</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Late 2019 | <span class="launch_sub_title">Falcon 9 • Crew Dragon Demo 2</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> LC-39A, Kennedy Space Center, Florida</p>
+                    <p>A SpaceX Falcon 9 rocket will launch a Crew Dragon spacecraft on its first test flight with 
+                        astronauts on-board to the International Space Station under the auspices of NASA’s commercial 
+                        crew program. NASA astronauts Doug Hurley and Bob Behnken will fly on the Demo-2 mission. The 
+                        Crew Dragon will return to a splashdown at sea. Delayed from June, July 25 and Sept. 21.</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item">        
+                    <div class="launch_title">
+                        <h2>Late 2019 | <span class="launch_sub_title">SSLV • BlackSky Global</span></h2>
+                    </div>
+                    <div class="launch_description">
+                        <p><b>Launch Time:</b> TBD<br>
+                        <b>Launch Site:</b> Satish Dhawan Space Center, Sriharikota, India</p>
+                    <p>India’s Small Satellite Launch Vehicle (SSLV) will launch on its first commercial mission with 
+                        four Earth observation satellites for BlackSky Global, a Seattle-based company. The rideshare 
+                        mission for BlackSky is being arranged by Spaceflight. Delayed from November.</p>
+                    </div>                    
+                </div>
+                <div class="launch_schedule_item last_launch_item">
+                    <div class="launch_title">
+                        <h2>TBD | <span class="launch_sub_title">Atlas 5 • CST-100 Starliner Crew Flight Test</span></h2>
+                        <div aria-hidden="true" id="scroll_bottom"></div>
+                    </div>
+                    <div id="last_description" class="launch_description">
+                        <p><b>Launch Window:</b> TBD<br>
+                        <b>Launch Site:</b> SLC-41, Cape Canaveral Air Force Station, Florida</p>
+                    <p>A United Launch Alliance Atlas 5 rocket, designated AV-082, will launch Boeing’s CST-100 Starliner 
+                        spacecraft on its first mission with astronauts, known as the Crew Test Flight, to the International 
+                        Space Station. The capsule will dock with the space station, then return to Earth to landing in the 
+                        Western United States. Boeing astronaut Chris Ferguson and NASA astronauts Mike Fincke and Nicole Mann 
+                        will fly on the Crew Flight Test. The rocket will fly in a vehicle configuration with two solid rocket 
+                        boosters and a dual-engine Centaur upper stage. Delayed from August. </p>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="archived_link">
+                <a class="archived_launches" href="https://spaceflightnow.com/launch-log/">See all archived launches since 2004</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Launch Videos -->
+    <section>
+        <div aria-hidden="true" id="launch_anchor"></div>
+        <div class="launch_video_section">
+            <div class="launch_videos">
+                <h1>Launch Videos</h1>
+                <h2 class="videoTitle"></h2>
+                <div class="video_description">
+                    <p>Choose a launch video below.</p>
+                </div>
+                <div class="video_container">
+                    <div class="small_screen">
+                        <h2 class="small_screen_h2">Amos-17 Mission</h2>
+                        <p>SpaceX is targeting Tuesday, August 6 for launch of AMOS-17 from Space Launch Complex 40 
+                            (SLC-40) at Cape Canaveral Air Force Station, Florida. The launch window opens at 6:53 p.m. 
+                            EDT, or 22:53 UTC, and closes at 8:21 p.m. EDT, or 00:21 UTC on August 7. The satellite will 
+                            be deployed approximately 31 minutes after liftoff.</p>
+                        <p>Falcon 9’s first stage for the AMOS-17 mission previously supported the Telstar-19 VANTAGE mission 
+                            in July 2018 and the Es’hail-2 mission in November 2018.</p>
+                    </div>
+                    <iframe class="amos_launch" src="https://www.youtube.com/embed/fZh82-WcCuo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="small_screen">
+                        <h2 class="small_screen_h2">Juno Mission</h2>
+                        <p>Commanding Juno after years of testing was at first a nerve-racking experience for the scientists, 
+                            engineers and countless other collaborators from across the world. The team worked as a family to 
+                            make sure that launch was a success, that all nine on-board instruments operate as designed, that 
+                            navigation, once in flight, goes smoothly, and that the mission-critical Juno Orbit Insertion went 
+                            exactly as planned.</p>
+                        <p>"We look at view graphs and charts and analyses all the time – what blows my mind is when I go 
+                            out at night, and I look up at Jupiter, and I realize, we’re there." — Rick Nybakken, Project 
+                            Manager 2012-2017, JPL</p>
+                        <p>Team Members: Heidi Becker, Scott Bolton, Jack Connerney, Jennifer Delavan, Maria Schellpfeffer, 
+                            Paul Steffes, Marla Thornton</p>
+                    </div>
+                    <iframe class="juno_launch" src="https://www.youtube.com/embed/5trvfmBSlqk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="small_screen">
+                        <h2 class="small_screen_h2">Zarya Mission</h2>
+                        <p>Zarya is the first module of the International Space Station. Заря (Zarya) means “dawn” and was 
+                            launched on 20 November 1998 by a Proton rocket from the Baikonur Cosmodrome in Kazakhstan. In 
+                            December 1998, Space Shuttle Endeavour approached Zarya and docked the US module Unity.</p>
+                    </div>
+                    <iframe class="zarya_launch" src="https://www.youtube.com/embed/7dkBcbfWV44" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video_selector_container">
+                    <div id="amos_button" class="video_selector_item" onclick="showAmosVideo()">
+                        <h2>Amos-17 Mission</h2>
+                        <img src="images/amos_video.jpg" alt="Image of 4 planets transforming from red/orange to earth colors.">
+                        <a class="video_button amos_button">Watch</a>
+                    </div>
+                    <div id="juno_button" class="video_selector_item" onclick="showJunoVideo()">
+                        <h2 class="h2_juno">Juno Mission</h2>
+                        <img src="images/juno_video.jpg" alt="Image juno flying from earth.">
+                        <a class="video_button juno_button">Watch</a>
+                    </div>
+                    <div id="zarya_button" class="video_selector_item" onclick="showZaryaVideo()">
+                        <h2 class="h2_zarya">Zarya Mission</h2>
+                        <img src="images/zarya_video.jpg" alt="Image of Zarya(ISS part) in space.">
+                        <a class="video_button zarya_button">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="images/img_btm_launches.svg" class="img_btm_left_launches" alt="White outline of the bottom of a spaceshuttle attatched to rockets.">
+
+<!-- Social Media -->
+    <div class="social_media">
+        <a href="https://www.facebook.com/NASA/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/nasa"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/nasa/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+<!-- NASA Link -->
+    <div class="NASA_link"> 
+        <a href="https://www.nasa.gov">NASA</a>
+    </div>
+    
+<!-- Copyright -->
+    <div class="copyright">
+        <p>Copyright © 2019 Space Travel</p>
+    </div>
+</footer>
+
+</body>
+</html>

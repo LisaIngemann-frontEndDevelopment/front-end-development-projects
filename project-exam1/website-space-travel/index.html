@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Space Travel - Explore travel into space">
+	<meta name="keywords" content="space,travel,explore space,space activity,ISS location,humans in space,mars,space launches,NASA live,NASA science live,NASA TV">
+	<meta name="author" content="Lisa Ingemann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="font_styles.css">
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <title>Space Travel</title>
+    <script src="scripts/script_home.js"> </script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="fixed_main_nav">
+        <h1 id="logo_fixed"><a href="index.html">SPACE TRAVEL</a></h1>
+        
+<!-- Fixed Main Nav -->
+        <nav class="fixed_links">
+            <a class="fixed_active" href="index.html"><i class="active_icon icon-home-space"></i>Home</a>
+            <a href="live.html"><i class="icon-live-space"></i>Live</a>
+            <a href="launches.html"><i class="icon-launches-space"></i>Launches</a>
+            <a href="mars.html"><i class="icon-mars-space"></i>Mars</a>
+            <a href="contact.html"><i class="icon-contact-space"></i>Contact</a>
+        </nav>
+        <div>
+            <i id="fixedHamburgerMenu" class="fas fa-bars" onclick="toggleFixedMenu()"></i>
+        </div>
+    </div>
+
+<!-- Header Background -->
+    <div class="header_background_blue">
+        <h1 class="logo"><a href="index.html">SPACE TRAVEL</a></h1>
+        <img src="images/spaceShuttle.svg" class="img_right" alt="White outline of a space shuttle.">
+
+<!-- Main Nav -->
+        <nav class="top_nav">
+            <ul class="main_nav">
+                <li><a class="active" href="index.html"><i class="active_icon icon-home-space"></i>Home</a></li>
+                <li><a href="live.html"><i class="icon-live-space"></i>Live</a></li>
+                <li><a href="launches.html"><i class="icon-launches-space"></i>Launches</a></li>
+                <li><a href="mars.html"><i class="icon-mars-space"></i>Mars</a></li>
+                <li><a href="contact.html"><i class="icon-contact-space"></i>Contact</a></li>
+            </ul>
+            <div class="hamburger_cntnr">
+                <i id="hamburgerMenu" class="fas fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+<!-- Page Overview  -->
+        <div class="page_overview">
+            <h1 class="page_heading">Explore Travel Into Space</h1>
+            <p class="page_description">Read about Mars's weather, see images and videos taken by Mars rovers, 
+                see launch timeline, schedule for future launches and watch live videos and tv.</p>
+        </div>
+        <img src="images/img_top_home.svg" class="img_left_home" alt="White outline of a human standing on a planet.">
+    </div>
+</header>
+
+
+<!-- MAIN -->
+<main>
+    <div class="breadcrumbs">
+        <p>Home</p>
+    </div>
+    <section class="content content_top">
+        <div class="top_section">
+
+<!-- ISS Location -->
+            <div class="ISS_section">
+                <h1>Where is the ISS Now?</h1>
+                <p>The International Space Station continuously orbits around earth. 
+                    It moves close to 28 000 km/h so the location changes very fast.</p>
+                <p class="ISS_location"></p>
+                <a class="show_map" onclick="showMap()">Show map of current location</a>
+                <div class="mapOfISSLocation"></div>
+            </div>
+
+<!-- Humans In Space -->
+            <div class="humans_section">
+                <h1>Humans Currently in Space</h1>
+                <p>The International Space Station always requires people to be onboard to manage the station.</p>
+                <p class="humans_amount"></p>
+                <div class="human_icons">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- MARS/LAUNCHES  -->
+    <section class="section_black">
+        <div class="content mars_launches_section">
+
+<!-- Mars -->
+            <div class="mars_flex">
+                <div class="mars_text">
+                    <h1>Mars</h1>
+                    <p>Take a look at Mars's weather report to compare it to your own weather!</p>
+                    <p>See images taken by rovers on Mars.</p>
+                    <p>Watch a video of NASA's Opportunity Mars rover and see the results of its 15 years of exploration.</p>
+                </div>
+                <div class="mars_graphic">
+                    <div class="image_cntnr">
+                        <a href="mars.html"><img class="mars_img" src="images/mars.jpg" alt="Picture of Mars."></a>
+                        <a class="launch_mars_button" href="mars.html">Mars</a>
+                    </div>
+                </div>
+            </div>
+
+<!-- Launches -->
+            <div class="launches_flex">
+                <div class="launches_text">
+                    <h1>Launches</h1>
+                    <p>See a historical timeline of launches from all the way back to the first launch in 1950.</p>
+                    <p>Take a look at all the upcoming launches or read about all archived launches since 2004.</p>
+                    <p class="last_paragraph">Watch video feeds of three different launches.</p>
+                </div>
+                <div class="launches_graphic">
+                    <div class="image_cntnr">
+                        <a href="launches.html"><img class="launch_img" src="images/launch.jpg" alt="Space shuttle launching."></a>
+                        <a class="launch_mars_button" href="launches.html">Launches</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- LIVE VIDEO  -->
+    <section class="content_live_video_section">
+        <div class="live_video_section clearfix">
+            <h1>Watch Live Videos of Space Activity</h1>
+            <div class="live_video_flex">
+
+<!-- NASA Live -->
+                <a class="live_video_card_link" href="live.html#nasa_live_anchor">
+                    <div id="nasa_live_cta" class="nasa_live_cta">
+                        <h2>NASA Live</h2>
+                        <p>Watch a live stream of space program activity around the world as well as educational programs.</p>
+                        <span class="live_cta">NASA Live</span>
+                    </div>
+                </a>
+
+<!-- NASA Science Live -->
+                <a class="live_video_card_link" href="live.html#nasa_science_anchor">
+                    <div id="nasa_science_cta" class="nasa_science_cta">
+                        <h2>NASA Science Live</h2>
+                        <p>Meet experts behind the scenes to explore the secrets of the universe.</p>
+                        <span class="science_cta">NASA Live</span>
+                    </div>
+                </a>
+
+<!-- NASA TV -->
+                <a class="live_video_card_link" href="live.html#nasa_TV_anchor">
+                    <div id="nasa_TV_cta" class="nasa_TV_cta">
+                        <h2>NASA TV</h2>
+                        <p>Watch NASA TV that airs educational programs and live coverage of many different missions.</p>
+                        <span class="TV_cta">NASA Live</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="images/img_btm_home.svg" class="img_btm_left_home" alt="White outline of a planet with craters.">
+
+<!-- Social Media -->
+    <div class="social_media">
+        <a href="https://www.facebook.com/NASA/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/nasa"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/nasa/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+<!-- NASA Link -->
+    <div class="NASA_link"> 
+        <a href="https://www.nasa.gov">NASA</a>
+    </div>
+
+<!-- Copyright -->
+    <div class="copyright">
+        <p>Copyright © 2019 Space Travel</p>
+    </div>
+</footer>
+
+</body>
+</html>

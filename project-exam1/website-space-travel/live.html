@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Space Travel - Explore travel into space">
+	<meta name="keywords" content="space,travel,explore space,space activity,live,NASA live,NASA science live,episode list,NASA TV,educational programs">
+	<meta name="author" content="Lisa Ingemann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="font_styles.css">
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <title>Space Travel | Live</title>
+    <script src="scripts/script_live.js"> </script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="fixed_main_nav fixed_main_nav_red">
+        <h1 id="logo_fixed_red"><a href="index.html">SPACE TRAVEL</a></h1>
+
+<!-- Fixed Main Nav -->
+        <nav class="fixed_links_red">
+            <a href="index.html"><i class="icon-home-space"></i>Home</a>
+            <a class="fixed_active_red" href="live.html"><i class="active_icon icon-live-space"></i>Live</a>
+            <a href="launches.html"><i class="icon-launches-space"></i>Launches</a>
+            <a href="mars.html"><i class="icon-mars-space"></i>Mars</a>
+            <a href="contact.html"><i class="icon-contact-space"></i>Contact</a>
+        </nav>
+        <div>
+            <i id="fixedHamburgerMenu_red" class="fas fa-bars" onclick="toggleFixedMenu()"></i>
+        </div>
+    </div>
+
+<!-- Header Background -->
+    <div class="header_background_red">
+        <h1 class="logo_red"><a href="index.html">SPACE TRAVEL</a></h1>
+        <img src="images/spaceShuttle.svg" class="img_right" alt="White outline of a space shuttle.">
+
+<!-- Main Nav -->
+        <nav>
+            <ul class="main_nav_red">
+                <li><a href="index.html"><i class="icon-home-space"></i>Home</a></li>
+                <li><a class="active_red" href="live.html"><i class="active_icon icon-live-space"></i>Live</a></li>
+                <li><a href="launches.html"><i class="icon-launches-space"></i>Launches</a></li>
+                <li><a href="mars.html"><i class="icon-mars-space"></i>Mars</a></li>
+                <li><a href="contact.html"><i class="icon-contact-space"></i>Contact</a></li>
+            </ul>
+            <div class="hamburger_cntnr_red">
+                <i id="hamburgerMenu" class="fas fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+<!-- Page Overview  -->
+        <div class="page_overview">
+            <h1 class="page_heading">Live</h1>
+            <p class="page_description">Watch NASA Live or see episodes from NASA Science Live. 
+                Go to NASA TV to check out what is happening right now.</p>
+        </div>
+
+        <img src="images/img_top_live.svg" class="img_left_live" alt="Image of a live icon inside a camera.">
+    </div>
+</header>
+
+
+<!-- MAIN -->
+<main>
+    <div class="breadcrumbs">
+        <p><a href="index.html">Home</a> | Live</p>
+    </div>
+    
+<!-- NASA Live -->
+    <div aria-hidden="true" id="nasa_live_anchor"></div>
+    <section class="content">
+        <div class="nasa_live">
+            <h1 class="h1_red">NASA Live</h1>
+            <p>NASA Live is a live stream that shows live coverage of space program activity around the world as well as 
+                educational programs. Take a look to see if it is live right now.</p>
+            <div class="iframe_cntnr">
+                <iframe id="scienceIframe" width="960" height="550" src="https://www.youtube.com/embed/21X5lGlDOfg" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+<!-- NASA Science Live -->
+    <div aria-hidden="true" id="nasa_science_anchor"></div>
+    <section class="section_black">
+        <div class="nasa_science_live">
+            <h1 class="h1_light">NASA Science Live</h1>
+            <h2 class="episodeTitle">Introduction</h2>
+            <p class="description">We’re taking you behind-the-scenes alongside our experts to explore the secrets of the 
+                universe. From remote locations on Earth, to the depths of outer space, join us live each month to interact 
+                with experts and watch as we reveal the mysteries of our solar system and beyond.</p>
+            <div class="episode_selectors">
+                <a class="science_active" id="intro" onclick="buttonClicked(this.id)">Intro</a>
+                <a class id="ep1" onclick="buttonClicked(this.id)">Ep.1</a>
+                <a class id="ep2" onclick="buttonClicked(this.id)">Ep.2</a>
+                <a class id="ep3" onclick="buttonClicked(this.id)">Ep.3</a>
+                <a class id="ep4" onclick="buttonClicked(this.id)">Ep.4</a>
+                <a class id="ep5" onclick="buttonClicked(this.id)">Ep.5</a>
+                <a class id="ep6" onclick="buttonClicked(this.id)">Ep.6</a>
+                <a class id="ep7" onclick="buttonClicked(this.id)">Ep.7</a>
+                <a class id="ep8" onclick="buttonClicked(this.id)">Ep.8</a>
+            </div>
+            <div class="iframe_cntnr_science">
+                <iframe id="iframeScience" width="960" height="550" src="https://www.youtube.com/embed/uVHeE77lsW0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+<!-- NASA TV -->
+    <div aria-hidden="true" id="nasa_TV_anchor"></div>
+    <section class="content_bottom flex">
+        <div class="nasa_tv">
+            <h1 class="h1_red"><a href="https://www.nasa.gov/multimedia/nasatv/index.html#public">NASA TV</a></h1>
+            <p>Watch NASA TV that was originally created for NASA managers and engineers to be provided 
+                with real-time video of missions. They have operated a television service since the start 
+                of space programs to archive the data and provide media outlets with video footage.</p> 
+                <p>NASA TV airs many educational programs, and provides live coverage of many manned missions 
+                    including the International Space Station, robotic missions, and domestic and international launches.</p>
+        </div>
+        <div class="nasa_tv_img">
+            <a id="nasa_tv_img" href="https://www.nasa.gov/multimedia/nasatv/index.html#public">
+                <img class="nasa_tv_image" src="images/nasa_tv.jpg" alt="Image of an astronaut in floating in space with earth behind him.">
+            </a>
+            <a class="red_button" href="https://www.nasa.gov/multimedia/nasatv/index.html#public">NASA TV</a>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="images/img_btm_live.svg" class="img_btm_left_live" alt="Image of a live icon inside a camera.">
+
+<!-- Social Media -->
+    <div class="social_media">
+        <a href="https://www.facebook.com/NASA/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/nasa"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/nasa/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+<!-- NASA Link -->
+    <div class="NASA_link"> 
+        <a href="https://www.nasa.gov">NASA</a>
+    </div>
+
+<!-- Copyright -->
+    <div class="copyright">
+        <p>Copyright © 2019 Space Travel</p>
+    </div>
+</footer>
+
+</body>
+</html>

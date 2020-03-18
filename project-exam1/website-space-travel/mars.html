@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Space Travel - Explore travel into space">
+	<meta name="keywords" content="space,travel,explore space,space activity,weather report,mars rover,rover images,rover video">
+	<meta name="author" content="Lisa Ingemann">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="font_styles.css">
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <title>Space Travel | Mars</title>
+    <script src="scripts/script_mars.js"> </script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="fixed_main_nav fixed_main_nav_red">
+        <h1 id="logo_fixed_red"><a href="index.html">SPACE TRAVEL</a></h1>
+
+<!-- Fixed Main Nav -->
+        <nav class="fixed_links_red">
+            <a href="index.html"><i class="icon-home-space"></i>Home</a>
+            <a href="live.html"><i class="icon-live-space"></i>Live</a>
+            <a href="launches.html"><i class="icon-launches-space"></i>Launches</a>
+            <a class="fixed_active_red" href="mars.html"><i class="active_icon icon-mars-space"></i>Mars</a>
+            <a href="contact.html"><i class="icon-contact-space"></i>Contact</a>
+        </nav>
+        <div>
+            <i id="fixedHamburgerMenu_red" class="fas fa-bars" onclick="toggleFixedMenu()"></i>
+        </div>
+    </div>
+
+<!-- Header Background -->
+    <div class="header_background_red">
+        <h1 class="logo_red"><a href="index.html">SPACE TRAVEL</a></h1>
+        <img src="images/spaceShuttle.svg" class="img_right" alt="White outline of a space shuttle.">
+
+<!-- Main Nav-->
+        <nav>
+            <ul class="main_nav_red">
+                <li><a href="index.html"><i class="icon-home-space"></i>Home</a></li>
+                <li><a href="live.html"><i class="icon-live-space"></i>Live</a></li>
+                <li><a href="launches.html"><i class="icon-launches-space"></i>Launches</a></li>
+                <li><a class="active_red" href="mars.html"><i class="active_icon icon-mars-space"></i>Mars</a></li>
+                <li><a href="contact.html"><i class="icon-contact-space"></i>Contact</a></li>
+            </ul>
+            <div class="hamburger_cntnr_red">
+                <i id="hamburgerMenu" class="fas fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+<!-- Page Overview -->
+        <div class="page_overview">
+            <h1 class="page_heading">Mars</h1>
+            <p class="page_description">See Mars's weather report from Insight and images and videos taken by Mars rovers.</p>
+        </div>
+
+        <img src="images/img_top_mars.svg" class="img_left_mars" alt="White outline of a Mars rover.">
+    </div>
+</header>
+
+
+<!-- MAIN -->
+<main>
+    <div class="breadcrumbs">
+        <p><a href="index.html">Home</a> | Mars</p>
+    </div>
+
+<!-- MARS WEATHER -->
+    <section class="content">
+        <div class="mars_weather_section">
+            <h1>Mars's Weather Report</h1>
+            <p>If you want to read more about InSight and its mission visit <a class="inline_link_red" href="https://www.nasa.gov/mission_pages/insight/main/index.html">NASA.gov</a></p>
+            <div class="mars_weather_image">
+                <div class="mars_weather_image_content">
+                    <div class="insight_description clearfix">
+                        <p>InSight is taking daily weather measurements on the surface of Mars at Elysium Planitia, 
+                            a flat smooth plain near Mars’ equator.</p>
+                    </div>
+                    <div class="weather_h2 clearfix">
+                        <h2><span class="insight_title">InSight:</span> Mars Weather Service</h2>
+                    </div>
+                    <div class="insight_location clearfix">
+                        <p>Elysium Planitia</p>
+                    </div>
+                </div>
+            </div>
+
+<!-- Weather Report -->
+            <div class="todays_report clearfix">
+                <div class="today1">
+                    <h3><span class="today1_sol">no data</span></h3>
+                    <p><span class="today1_date"></span></p>
+                </div>
+                <div class="today2">
+                    <div>
+                        <p class="high">High: <span class="today2_high"><span class="calcTemp">no data</span></span></p>
+                        <p class="temperature_button"><a class="celsius celsius1 active_temperature" onclick="celsius(this)">C</a> | <a class="fahrenheit fahrenheit1" onclick="fahrenheit(this)">F</a></p>
+                    </div>
+                    <div>
+                        <p class="low">Low: <span class="today2_low"><span class="calcTemp">no data</span></span></p>
+                        <p class="temperature_button"><a class="celsius celsius2 active_temperature" onclick="celsius(this)">C</a> | <a class="fahrenheit fahrenheit2" onclick="fahrenheit(this)">F</a></p>
+                    </div>
+                </div>
+                <div class="today3">
+                    <p>Wind Speed: <span class="today3_wind">no data</span></p>
+                    <p>Pressure: <span class="today3_pressure">no data</span></p>
+                </div>
+            </div>
+            <div class="compare_weather">
+                <form>
+                    <input class="input_city" type="text" name="name" placeholder="Enter city name">
+                </form>
+                <div class="compare_error_cntnr">
+                    <p class="compare_error wrongInputErr">That city does not exist, please try another city name. For example (London).</p>
+                    <p class="compare_error noInputErr">Please enter a city name.</p>
+                </div>
+                <a class="compare_btn" onclick="compareWeather()">Compare to your weather</a>
+                <div class="compare">
+                    <p class="tempMax"><span class="calcTemp">no data</span></p>
+                    <p class="tempMin"><span class="calcTemp">no data</span></p>
+                    <p class="wind">no data</p>
+                    <p class="pressure">no data</p>
+                </div>
+            </div>    
+            <div class="mars_weather_report clearfix">
+                <div class="report report1">
+                    <h3 class="report_sol">no data</h3>
+                    <p class="report_date">no data</p>
+                    <p class="report_temperature"><b><span class="high calcTemp"></span></b> <span class="calcTemp">no data</span></p>
+                    <p class="report_wind">no data</p>
+                    <p class="report_pressure">no data</p>
+                </div>
+                <div class="report report2">
+                    <h3 class="report_sol">no data</h3>
+                    <p class="report_date">no data</p>
+                    <p class="report_temperature"><b><span class="high calcTemp"></span></b> <span class="calcTemp">nodata</span></p>
+                    <p class="report_wind">no data</p>
+                    <p class="report_pressure">no data</p>
+                </div>
+                <div class="report report3">
+                    <h3 class="report_sol">no data</h3>
+                    <p class="report_date">no data</p>
+                    <p class="report_temperature"><b><span class="high calcTemp"></span></b> <span class="calcTemp">no data</span></p>
+                    <p class="report_wind">no data</p>
+                    <p class="report_pressure">no data</p>
+                </div>
+                <div class="report report4">
+                    <h3 class="report_sol">no data</h3>
+                    <p class="report_date">no data</p>
+                    <p class="report_temperature"><b><span class="high calcTemp"></span></b> <span class="calcTemp">no data</span></p>
+                    <p class="report_wind">no data</p>
+                    <p class="report_pressure">no data</p>
+                </div>
+                <div class="report report5">
+                    <h3 class="report_sol">no data</h3>
+                    <p class="report_date">no data</p>
+                    <p class="report_temperature"><b><span class="high calcTemp"></span></b> <span class="calcTemp">no data</span></p>
+                    <p class="report_wind">no data</p>
+                    <p class="report_pressure">no data</p>
+                </div>
+                <div class="report report6">
+                    <h3 class="report_sol">no data</h3>
+                    <p class="report_date">no data</p>
+                    <p class="report_temperature"><b><span class="high calcTemp"></span></b> <span class="calcTemp">no data</span></p>
+                    <p class="report_wind">no data</p>
+                    <p class="report_pressure">no data</p>
+                </div>
+                <div class="report report7">
+                    <h3 class="report_sol">no data</h3>
+                    <p class="report_date">no data</p>
+                    <p class="report_temperature"><b><span class="high calcTemp"></span></b> <span class="calcTemp">no data</span></p>
+                    <p class="report_wind">no data</p>
+                    <p class="report_pressure">no data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ROVER IMAGE SLIDESHOW -->
+    <section class="section_black">
+        <div class="image_slideshow_section">
+            <div class="image_slideshow">
+                <h1>Images Taken By Mars Rovers</h1>
+                <p>Look at images taken by the different Mars rovers: Curiosity, Opportunity and Spirit.</p>
+                <p><b>Curiosity</b> was launched near the end of November 2011 and landed on Mars at the start of August 2012. Its goal is to determine if Mars 
+                    was ever able to support microbial life.
+                <b>Opportunity</b> was launched in the start of July 2003 and landed near the end of January 2004. It 
+                    stayed operational longer than expected and stopped working in June 2018.
+                <b>Spirit</b> was launched around the same time as Opportunity and landed on the other side of Mars. 
+                    This rover got stuck and lost communications near the end of March 2010.</p>
+
+<!-- Slideshow -->
+                <div class="slideshow_container">
+                    <figure class="image_container">
+                        <img class="slideshow_img image1" src="images/slideshow/curiosity1.jpg" alt="Image of Mars's surface taken by the Mars rover Curiosity.">
+                        <img class="slideshow_img image2" src="images/slideshow/curiosity4.jpg" alt="Image of Mars's surface from the Mast camera on the Mars rover Curiosity.">
+                        <img class="slideshow_img image3" src="images/slideshow/curiosity3.jpg" alt="Image from the navigation camera on Curiosity looking down at the rover.">
+                        <img class="slideshow_img image4" src="images/slideshow/curiosity2.jpg" alt="Close up image of the surface of Mars taken by the mars hand lens imager on the Mars rover Curiosity.">
+                        <img class="slideshow_img image5" src="images/slideshow/opportunity2.jpg" alt="Image of sandy dunes of Mars's surface taken by the Mars rover Opportunity.">
+                        <img class="slideshow_img image1" src="images/slideshow/opportunity1.jpg" alt="Image of Mars's surface taken by the Panoramic Camera of the Mars rover Opportunity.">
+                        <img class="slideshow_img image2" src="images/slideshow/opportunity3.jpg" alt="Image of the Mars rover Opportunity leaving to explore Mars.">
+                        <img class="slideshow_img image3" src="images/slideshow/spirit2.jpg" alt="Image of Mars's sruface and wheel tracks in the sand by the front hazard avoidance camera on the Mars rover Spirit.">
+                        <img class="slideshow_img image4" src="images/slideshow/spirit1.jpg" alt="Image of larger rock formations on Mars taken by the panoramic camera of the Mars rover Spirit.">
+                        <img class="slideshow_img image5" src="images/slideshow/spirit3.jpg" alt="image of Mars's surface taken by the Mars rover Spirit.">
+                    </figure>
+
+                    <div class="image_information_container">
+                        <p class="information_rover">ROVER: <b>Curiosity</b></p>
+                        <p class="information_date">DATE: <b>2019-08-18</b></p>
+                        <p class="information_camera">CAMERA: <b>Front Hazard Avoidance Camera</b></p>
+                    </div>
+                </div>
+
+<!-- Slideshow Buttons -->
+                <div class="btn_container">
+                    <a class="active_btn slider_btn" onclick="imageSelector(this)"></a>
+                    <a class="slider_btn" onclick="imageSelector(this)"></a>
+                    <a class="slider_btn" onclick="imageSelector(this)"></a>
+                    <a class="slider_btn" onclick="imageSelector(this)"></a>
+                    <a class="slider_btn" onclick="imageSelector(this)"></a>
+                    <a class="slider_btn" onclick="imageSelector(this)"></a>
+                    <a class="slider_btn" onclick="imageSelector(this)"></a>
+                    <a class="slider_btn" onclick="imageSelector(this)"></a>
+                    <a class="slider_btn" onclick="imageSelector(this)"></a>
+                    <a class="slider_btn" onclick="imageSelector(this)"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- ROVER VIDEO -->
+    <section class="content">
+        <div class="rover_video_section">
+            <h1>Mars Rover Video</h1>
+            <h2>Opportunity: NASA Rover Completes Mars Mission</h2>
+            <p>Drive along with the NASA’s Opportunity Mars rover and hear the voices of scientists and engineers 
+                behind the mission. Designed to run for 90 days, the exploration spanned more than 15 years from 
+                2004 to 2019. Along the way, it discovered definitive proof of liquid water on ancient Mars and set 
+                the off-world driving record. For more information on the Mars Exploration Rovers and all of NASA’s 
+                Mars missions, visit <a class="inline_link_red" href="https://mars.nasa.gov">mars.NASA.gov.</a></p>
+            <div class="rover_video">
+                <iframe src="https://www.youtube.com/embed/1Ll-VHYxWXU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <img src="images/img_btm_mars.svg" class="img_btm_left_mars" alt="Image of a Mars rover's 3 wheels.">
+
+<!-- Social Media -->
+    <div class="social_media">
+        <a href="https://www.facebook.com/NASA/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/nasa"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/nasa/"><i class="fab fa-instagram"></i></a>
+    </div>
+
+<!-- NASA Link -->
+    <div class="NASA_link"> 
+        <a href="https://www.nasa.gov">NASA</a>
+    </div>
+    
+<!-- Copyright -->
+    <div class="copyright">
+        <p>Copyright © 2019 Space Travel</p>
+    </div>
+</footer>
+
+</body>
+</html>
