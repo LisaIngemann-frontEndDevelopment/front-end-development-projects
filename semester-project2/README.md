@@ -1,5 +1,5 @@
-# Semester Project1
-## **Develop a Science Museum Website**
+# Semester Project2
+## **Create an Online Board Game**
 
 **Goal**\
 To create a board game and show the skills you have learned from CSS Frameworks, JavaScript 2 and Design 2.
