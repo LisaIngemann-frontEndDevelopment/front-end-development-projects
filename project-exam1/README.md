@@ -1,5 +1,5 @@
-# Semester Project1
-## **Develop a Science Museum Website**
+# Project Exam1
+## **Develop a Microsite**
 
 **Brief**\
 Create a microsite for SpaceX/NASA to raise awareness about space program activity around the world. The site should appeal to a 
