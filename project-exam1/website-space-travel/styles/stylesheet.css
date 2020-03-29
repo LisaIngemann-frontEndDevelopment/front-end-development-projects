@@ -160,7 +160,7 @@ i:hover {
 .img_right {
     position: absolute;
     top: 0;
-    right: -50px;
+    right: 0;
     width: 800px;
     z-index: 1;
 }
@@ -249,7 +249,7 @@ li {
     position: relative;
     content: "";
     display: block;
-    width:0;
+    width: 0;
     height: 8px;
     margin: 2px auto 0 auto;
     background: #2E3192;
@@ -2057,7 +2057,7 @@ input[type=text]:focus {
         padding-top: 150px;
     }
     .img_right {
-        right: -25px;
+        right: 0;
         width: 450px;
     }
 
