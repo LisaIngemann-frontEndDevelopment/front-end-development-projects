@@ -1,0 +1,51 @@
+.icons {   
+    display: block;
+    margin: 10px auto 20px auto;
+
+    & a {
+        color: var(--color-white);
+        font-size: 40px;
+        padding: 10px 20px
+    }
+}
+a:hover > .twitter, .twitter:active {
+    color: #1da1f3;
+}
+a:hover > .facebook, .facebook:active {
+    color: #3b5998;
+}
+a:hover > .instagram, .instagram:active {
+    color: #dd2a7b;
+}
+.footer {
+    color: var(--color-secondary-light);
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+
+    @media screen and (max-width: 500px) {
+        padding-top: 20px;
+    }
+}
+.copyright {
+    font-size: 14px;
+}
+.scroll {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-size: 40px;
+    color: var(--color-secondary-light2);
+    margin-bottom: 20px;
+    float: right;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--color-primary);
+    }
+    @media screen and (max-width: 500px) {
+        right: 5px;
+        top: 5px;
+    }
+}

@@ -1,0 +1,19 @@
+.card {
+    margin-bottom: -50px;
+    
+    & div {
+        height: 100px;
+    }
+}
+.header {
+    text-align: center;
+    & h3 {
+        color: var(--color-darkGrey);
+    }
+}
+.h4 {
+    color: var(--color-primary);
+}
+.container {
+    margin-bottom: 80px;
+}

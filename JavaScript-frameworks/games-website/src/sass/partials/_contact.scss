@@ -1,0 +1,37 @@
+/* Contact */
+.container-form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.error {
+    color: $red;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    font-weight: bold;
+    background: $green;
+    border: $green;
+
+    &:hover {
+        color: $light-green;
+        background: $dark-grey;
+        border: $dark-grey;
+    }
+}
+.form-control:focus {
+    border-color: $light-green;
+    box-shadow: 0 0 0 0.2rem rgba(146, 233, 224, 0.25);
+}
+.form-label {
+    color: $grey;
+    font-weight: bold;
+}
+
+.messageSent {
+    background: $light-green;
+    color: $dark-grey;
+    padding: 10px;
+    margin: 10px 0;
+}

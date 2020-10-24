@@ -1,0 +1,27 @@
+/* Publishers/Developers */
+.accordion-card {
+    
+    & .card-header {
+        font-weight: bold;
+        color: $grey;
+        &:hover {
+            cursor: pointer;
+            color: $green;
+        }    
+    } 
+    & .accordion-info {
+        float: right;
+        margin-left: 10px;
+        font-weight: normal;
+        font-size: 14px;
+    }
+    & h2 {
+        color: $grey;
+    }
+    & p {
+        color: $green;
+    }
+    & .count {
+        color: $dark-grey;
+    }
+}

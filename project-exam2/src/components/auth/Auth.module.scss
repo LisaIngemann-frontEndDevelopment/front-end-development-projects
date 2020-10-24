@@ -1,0 +1,60 @@
+.logInOut {
+    position: relative;
+    top: 2px;
+    font-size: 14px !important;
+    text-align: right;
+    margin-left: auto;
+    background: transparent !important;
+
+    &:hover {
+        cursor: pointer;
+    }
+    @media screen and (max-width: 992px) {
+        text-align: center; 
+        margin-left: 0;
+        border-top: 2px solid var(--color-grey);
+    }
+}
+.button {
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 400px) {
+        display: block;
+        
+        width: 100%;
+    }
+}
+.input {
+    margin-top: 20px;
+}
+.container {
+    max-width: 700px;
+}
+.password {
+    position: relative;
+
+    & input {
+        padding-right: 70px;
+    }
+    & span {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        padding: 18px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+        & svg {
+            color: var(--color-primary);
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover > svg {
+            color: var(--color-secondary-light2);
+        }
+    }
+}
