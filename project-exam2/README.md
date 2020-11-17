@@ -10,5 +10,8 @@ where properties can be added and enquiries managed.
 **Documents**\
 A mockup and style guide is included. 
 
+**Link to prototype**\
+https://xd.adobe.com/view/b35efbd6-3c98-4e65-45d4-08af0f0c26fa-c56f/
+
 **Link to website**\
 https://frontenddeveloper-creativevision.one/holidaze/
