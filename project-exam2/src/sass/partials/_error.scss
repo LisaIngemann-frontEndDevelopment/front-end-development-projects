@@ -1,0 +1,17 @@
+/* Error */
+.fetchErrorP {
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 400px;
+    background: var(--color-secondary-light);
+}
+.fetchErrorLink {
+    color: var(--color-primary);
+    font-weight: bold;
+    
+    &:hover {
+        color: var(--color-secondary-light2);
+        text-decoration: underline;
+    }
+}

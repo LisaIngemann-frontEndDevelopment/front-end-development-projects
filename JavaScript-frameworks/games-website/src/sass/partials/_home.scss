@@ -1,0 +1,69 @@
+/* Home */
+.search {
+    margin-bottom: 20px;
+}
+.card-game {
+    margin-bottom: 20px;
+    background: $dark-grey;
+    border: none;
+    color: $white;
+}
+.card {
+    &-img {
+        overflow: hidden; 
+        height: 180px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    & .card-img-top {
+        background-size: cover;
+        background-position: center top;
+        height: 185px;
+        width: 120%;
+        margin-left: -5px;
+        margin-top: -2px;
+    }
+}
+.btn {
+    text-decoration: none;
+
+    &-block a:hover {
+        text-decoration: none;
+    }
+    &-secondary {
+        background: $green;
+        border: 2px solid $green;
+        font-weight: bold;
+    
+        &:hover {
+            color: $green;
+            background: $dark-grey;
+            border: 2px solid $green;
+            
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.addToFave {
+    margin-top: 20px;
+    color: $light-red;
+    background: $white;
+    border: 2px solid $light-red;
+
+    &:hover {
+        color: $dark-grey;
+        background: $light-red;
+        border: 2px solid $light-red;
+    }
+}
+
+.rating--good {
+	color: $green;
+}
+
+.rating--bad {
+	color: $red;
+}

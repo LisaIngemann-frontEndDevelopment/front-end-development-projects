@@ -1,0 +1,55 @@
+/* Blocktags */
+h1 {
+    color: $green;
+    margin-top: 40px;
+}
+h2 {
+    color: $light-grey;
+    font-size: 20px;
+}
+a {
+    color: $red;
+    font-weight: bold;
+
+    &:hover {
+        color: $light-red;
+        text-decoration: none;
+    }
+}
+html, body {
+    height: 100%;
+}
+body {
+    background: $light-grey;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer {
+    flex-shrink: 0;
+    display: flex;
+    color: $dark-grey;
+    background: $grey;
+    justify-content: center;
+    padding-top: 12px;
+    margin-top: 50px; 
+
+    & a {
+        color: $dark-grey;
+
+        &:hover {
+            color: $light-red;
+        }
+    }
+}
+.page-wrapper {
+    flex: 1 0 auto;
+}
+.spinner {
+    display: block;
+    margin: 50px auto;
+    color: $green;
+}

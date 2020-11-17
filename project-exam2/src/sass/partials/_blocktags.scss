@@ -1,0 +1,66 @@
+:root {
+    --color-primary: #5B7B91;
+    --color-secondary-dark: #2A3652;
+    --color-secondary: #EFC07B;
+    --color-secondary-light: #FBE4B7;
+    --color-secondary-light2: #96B6C6;
+    --color-secondary2: #EF4136;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-darkGrey: #414042;
+    --color-grey: #7C7C7C;
+    --color-lightGrey: #E8E8E8;
+  }
+  
+* {
+    box-sizing: border-box;
+    font-family: $font-bodyText;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background:white;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+footer {
+    background: var(--color-secondary-dark);
+    padding-top: 12px;
+    position: relative;
+}
+.page-wrapper {
+    flex: 1 0 auto;
+}
+a {
+    color: var(--color-darkGrey);
+
+    &:hover {
+        color: var(--color-darkGrey);
+        text-decoration: none;
+    }
+}
+h1, h2, h3, h4 {
+    font-family: $font-headings;
+    font-weight: bold;
+}
+h1, h2 {
+    color: var(--color-primary);
+    text-align: center;
+}
+h1 {
+    margin-top: 50px;
+}
+h3 {
+    color: var(--color-secondary);
+}
+h4 {
+    color: var(--color-secondary);
+}  
+section {
+    padding: 0;
+    margin: 50px 0 150px 0;
+}

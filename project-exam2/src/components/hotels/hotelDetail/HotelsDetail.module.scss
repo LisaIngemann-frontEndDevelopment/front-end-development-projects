@@ -1,0 +1,57 @@
+.image {
+    width: 100%;
+}
+.h1 {
+    margin-bottom:  35px;
+}
+.h2 {
+    text-align: left;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+.map {
+    font-weight: bold;
+}
+.map {
+    width: 100%;
+}
+.button {
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 70px;
+        margin-top: 30px;
+        display: block;
+        margin: 30px auto 70px auto;
+    }
+    & i {
+        margin-right: 2px;
+        position: relative;
+        top: 1px;
+    }
+}
+.container {
+    position: relative;
+    padding-bottom: 50px;
+}
+.a {
+    color: var(--color-secondary-light2);
+    text-decoration: underline;
+}
+.link {
+    color: var(--color-secondary-light2);
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    
+    &:hover {
+        color: var(--color-primary);
+    }
+    @media screen and (max-width: 768px) {
+        top: -45px;
+    }
+}

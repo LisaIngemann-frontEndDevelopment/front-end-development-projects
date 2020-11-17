@@ -1,0 +1,39 @@
+/* Bootstrap */
+.react-confirm-alert {
+    &-body {
+        width: 100% !important;
+    }
+    position: relative;
+
+    &-button-group  {
+        justify-content: center !important;
+
+        & button {
+            background-color: var(--color-primary) !important;
+
+            &:first-child {
+                background-color: var(--color-secondary2) !important;
+
+                &:hover {
+                    background-color: darken(#EF4136, 20%)!important;  
+                }
+            }
+            &:hover {
+                background-color: var(--color-secondary-dark)!important;
+            }
+        }
+    }
+}
+.spinner {
+    color: var(--color-primary);
+    display: block;
+    margin: 60px auto;
+}
+#button-tooltip > .tooltip-inner {
+    background-color: var(--color-secondary);
+    color: var(--color-darkGrey);
+}
+.tooltip [class$="arrow"]::before  {
+    top: -1px;
+    border-top-color: var(--color-secondary);
+}

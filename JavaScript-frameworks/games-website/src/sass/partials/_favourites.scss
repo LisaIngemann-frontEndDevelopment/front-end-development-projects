@@ -1,0 +1,23 @@
+/* Favourites */
+.favourite {
+    color: $red;
+    padding: 2px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.favouriteButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: fit-content;
+    border-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 0 2px;
+    background: rgba($color: $black, $alpha: 0.7);
+}
+.favouriteMessage {
+    color: $dark-grey;
+}

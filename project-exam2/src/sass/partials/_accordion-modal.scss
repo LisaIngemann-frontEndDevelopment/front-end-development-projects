@@ -1,0 +1,46 @@
+/* Accordion & modal */
+.modal {
+    &-title {
+        color: var(--color-darkGrey);
+        margin-left: auto;
+    }  
+    &-header {
+        text-align: center;        
+        padding: 20px 30px;
+        background: var(--color-lightGrey);
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }  
+    &-body {
+        padding: 20px;
+    }
+    &-footer {
+        padding: 20px 30px 30px 30px;
+    }
+    &-content {
+        border-radius: 30px;
+    }
+}
+.accordion {
+    width: 100%;
+    margin: 0 20px;
+    
+    &-card.card {
+        margin: 0;
+        width: 100%;
+
+        &:last-of-type {
+            background: var(--color-secondary-light);
+        }
+
+        &:hover {
+            top: 0;
+            left: 0;
+            box-shadow: none;
+        }  
+        & .card-header:hover {
+            cursor: pointer;
+            color: var(--color-primary);
+        }
+    }           
+}

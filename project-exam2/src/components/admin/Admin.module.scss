@@ -1,0 +1,22 @@
+.h1 {
+    margin-bottom: 20px;
+}
+.nav {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.link {
+    font-size: 18px;
+
+    &:hover {
+        color: var(--color-secondary-light2);
+    }
+    & i {
+        margin-right: 6px;
+        position: relative;
+        top: 2px;
+    }
+}
+.p {
+    text-align: center;
+}
