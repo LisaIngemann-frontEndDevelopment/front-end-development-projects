@@ -1,4 +1,4 @@
-# Semester Project1
+# Semester Project 1
 ## **Develop a Science Museum Website**
 
 **Brief**\
@@ -12,4 +12,4 @@ but should encourage viewers to visit the museum itself. The website should be r
 Sketches, wireframe, a schedule document and a Style Tile is included. 
 
 **Link to website**\
-http://frontenddeveloper-creativevision.one/Semester_Project1/index.html
+https://frontenddeveloper-creativevision.one/Semester_Project1/index.html

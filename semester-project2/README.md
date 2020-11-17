@@ -1,4 +1,4 @@
-# Semester Project2
+# Semester Project 2
 ## **Create an Online Board Game**
 
 **Goal**\
@@ -12,4 +12,4 @@ The board game will be made using HTML, CSS and JavaScript and have 3 main pages
 Design sketches, a schedule document and a Style Tile is included. 
 
 **Link to website**\
-http://frontenddeveloper-creativevision.one/Semester_Project2/index.html
+https://frontenddeveloper-creativevision.one/Semester_Project2/index.html

@@ -1716,6 +1716,7 @@ li a:active {
     text-align: center;
     margin-right: 1%;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .report7 {
     margin-right: 0;
@@ -1735,7 +1736,7 @@ li a:active {
     margin: 0;
 }
 .report_pressure {
-    margin: 0 0 20px 0;
+    margin: 0 0 0 0;
 }
 
 /* Image Slideshow Section */

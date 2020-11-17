@@ -1,4 +1,4 @@
-# Design1
+# Design 1
 ## **Vector graphics and Style Tile assignment**
 
 **Goal**\
