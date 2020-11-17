@@ -8,7 +8,7 @@ the visitor side of the website where users can search accommodation and make en
 where properties can be added and enquiries managed.
 
 **Documents**\
-A persona document, wireframe, paper prototype, schedule document and Style Tile is included. 
+A mockup and style guide is included. 
 
 **Link to website**\
-http://frontenddeveloper-creativevision.one/Project_Exam1/index.html
+https://frontenddeveloper-creativevision.one/holidaze/
