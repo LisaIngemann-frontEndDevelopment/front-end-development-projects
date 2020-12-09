@@ -1710,7 +1710,7 @@ li a:active {
 }
 .report {
     float: left;
-    width: 13.42%;
+    width: 15.83%;
     border: 2px solid #929292;
     border-radius: 10px;
     text-align: center;
@@ -1718,7 +1718,7 @@ li a:active {
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-.report7 {
+.report6 {
     margin-right: 0;
 }
 .report_sol {
@@ -2799,12 +2799,13 @@ input[type=text]:focus {
     .report {
         float: left;
         margin: 0 auto 10px auto;
-        width: 49%;       
+        width: 49%;   
+        min-height: 200px;    
     }
     .report2, .report4, .report6 {
         margin-left: 1%;
     }
-    .report1, .report3, .report5, .report7 {
+    .report1, .report3, .report5 {
         margin-right: 1%;
     }
     .compare_btn {

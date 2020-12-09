@@ -143,7 +143,7 @@ function informationWeatherReport(marsWeather) {
     var today3Pressure = document.querySelector(".today3_pressure");
     var report7 = document.querySelector(".report7");
 
-    for (var i = 0; i < 7; ++i) {
+    for (var i = 0; i < 6; ++i) {
         var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         var report = document.querySelector(".report" + (i + 1));
         // Extract month from JSON string containing date and set it to the month name from the variable months.
@@ -151,7 +151,7 @@ function informationWeatherReport(marsWeather) {
         // Extract day from JSON string containing date
         var day = marsWeather[marsWeather.sol_keys[i]].First_UTC.substring(8,10);
 
-        if((marsWeather.validity_checks[marsWeather.sol_keys[i]].AT.valid === true) && (marsWeather.validity_checks[marsWeather.sol_keys[i]].PRE.valid === true) && (i == 6)) {
+        if((marsWeather.validity_checks[marsWeather.sol_keys[i]].AT.valid === true) && (marsWeather.validity_checks[marsWeather.sol_keys[i]].PRE.valid === true) && (i === 0)) {
             today1Sol.innerHTML = 'Sol ' + marsWeather.sol_keys[i];
             today1Date.innerHTML =  month + ' ' + day
             today2High.innerHTML = '<span class="calcTemp">' + marsWeather[marsWeather.sol_keys[i]].AT.mx.toFixed(0) + '</span>°';
@@ -159,25 +159,24 @@ function informationWeatherReport(marsWeather) {
             today3Wind.innerHTML =  marsWeather[marsWeather.sol_keys[i]].HWS.av.toFixed(2) + ' m/s';
             today3Pressure.innerHTML =  marsWeather[marsWeather.sol_keys[i]].PRE.av.toFixed(0) + ' Pa';
 
-            report7.innerHTML =
-                '<h3 class="report_sol">Sol ' + marsWeather.sol_keys[6] + '</h3>' +
+            report.innerHTML =
+                '<h3 class="report_sol">Sol ' + marsWeather.sol_keys[i] + '</h3>' +
                 '<p class="report_date">' + month + ' ' + day + '</p>' +
-                '<p class="report_temperature"><b><span class="high calcTemp">' + marsWeather[marsWeather.sol_keys[6]].AT.mx.toFixed(0) + '</span>° <span class="degree_indicator" style="font-size:12px;">C</span></p></b> <span class="calcTemp" style="font-size:12px;">' + marsWeather[marsWeather.sol_keys[6]].AT.mn.toFixed(0) + '</span>° <span class="degree_indicator" style="font-size:12px;">C</span></p>' +
-                '<p class="report_wind">' + marsWeather[marsWeather.sol_keys[6]].HWS.av.toFixed(2) + ' m/s</p>' +
-                '<p class="report_pressure">' + marsWeather[marsWeather.sol_keys[6]].PRE.av.toFixed(0) + ' Pa</p>';
-        } else if((marsWeather.validity_checks[marsWeather.sol_keys[i]].AT.valid == true) && (marsWeather.validity_checks[marsWeather.sol_keys[i]].PRE.valid == true)) {
+                '<p class="report_temperature"><b><span class="high calcTemp">' + marsWeather[marsWeather.sol_keys[i]].AT.mx.toFixed(0) + '</span>° <span class="degree_indicator" style="font-size:12px;">C</span></p></b> <span class="calcTemp" style="font-size:12px;">' + marsWeather[marsWeather.sol_keys[i]].AT.mn.toFixed(0) + '</span>° <span class="degree_indicator" style="font-size:12px;">C</span></p>' +
+                '<p class="report_wind">' + marsWeather[marsWeather.sol_keys[i]].HWS.av.toFixed(2) + ' m/s</p>' +
+                '<p class="report_pressure">' + marsWeather[marsWeather.sol_keys[i]].PRE.av.toFixed(0) + ' Pa</p>';
+        } else if((marsWeather.validity_checks[marsWeather.sol_keys[i]].AT.valid === true) && (marsWeather.validity_checks[marsWeather.sol_keys[i]].PRE.valid === true)) {
             report.innerHTML =
                 '<h3 class="report_sol">Sol ' + marsWeather.sol_keys[i] + '</h3>' +
                 '<p class="report_date">' + month + ' ' + day + '</p>' +
                 '<p class="report_temperature"><b><span class="high calcTemp">' + marsWeather[marsWeather.sol_keys[i]].AT.mx.toFixed(0) + '</span>° <span class="degree_indicator" style="font-size:12px;">C</span></p></b> <span class="calcTemp">' + marsWeather[marsWeather.sol_keys[i]].AT.mn.toFixed(0) + '</span>° <span class="degree_indicator" style="font-size:12px;">C</span></p></p>' +
+                '<p class="report_wind">' + marsWeather[marsWeather.sol_keys[i]].HWS.av.toFixed(2) + ' m/s</p>' +
                 '<p class="report_pressure">' + marsWeather[marsWeather.sol_keys[i]].PRE.av.toFixed(0) + ' Pa</p>';
         } else {
-            today1Sol.innerHTML = 'Sol ' + marsWeather.sol_keys[i];
-            today1Date.innerHTML =  month + ' ' + day
             report.innerHTML =
                 '<h3 class="report_sol">Sol ' + marsWeather.sol_keys[i] + '</h3>' +
                 '<p class="report_date">' + month + ' ' + day + '</p>' +
-                '<p class="report_temperature">No Data</p>';
+                '<p class="report_temperature">No Data</p>'; 
         }
     }
 };
